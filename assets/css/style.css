@@ -1,8 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
-@import "lib/font-lineicons.css";
-@import "lib/toastr.min.css";
-@import "lib/bootstrap.min.css";
+@import "font-lineicons.css";
+@import "toastr.min.css";
+@import "bootstrap.min.css";
 
 /* ================================================
 // ************************************************
@@ -2521,7 +2521,7 @@ input[type=checkbox]:focus {
 
 .package-column .package-price .price {
 	position: relative;
-	font-size: 115px;
+	font-size: 80px;
 	font-weight: 300;
 	line-height: 125px;
 }
@@ -3414,7 +3414,7 @@ input[type=checkbox]:focus {
 
 .product-list.material-view .product-image-wrapper {
 	position: relative;
-	margin: -1px -1px 25px;
+	margin: -1px -1px 0px;
 	overflow: hidden;
 }
 
@@ -3448,7 +3448,7 @@ input[type=checkbox]:focus {
 	content: "";
 	border-radius: 50%;
 	z-index: -1;
-	background-color: #000000;
+	background-color: rgba(232, 19, 19, 0);
 	opacity: 0.3;
 }
 
@@ -5464,7 +5464,7 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 }
 
 .static-header.register-version {
-	background-image: url("http://unsplash.com/photos/jUNuMQvBwGc/download");
+	background-image: url("../img/banner.jpg");
 }
 
 .static-header.register-version .signup-wrapper {

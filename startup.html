@@ -12,13 +12,14 @@
 	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.jpg">
 	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.jpg">
 	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.jpg">
-
-		<link rel="stylesheet" type="text/css" href="assets/css/default.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/component.css" />
+		<link rel="stylesheet" href="assets/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="assets/css/line.css"> <!-- Resource style -->
 	<link rel="stylesheet" type="text/css" href="assets/css/custom-animations.css" />
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-	
+
+	<script src="assets/js/modernizr.js"></script> <!-- Modernizr -->
+
 	<!--[if lt IE 9]>
 		<script src="assets/js/html5shiv.js"></script>
 		<script src="assets/js/respond.min.js"></script>
@@ -30,28 +31,7 @@
 	<div class="preloader-mask">
 		<div class="preloader"><div class="spin base_clr_brd"><div class="clip left"><div class="circle"></div></div><div class="gap"><div class="circle"></div></div><div class="clip right"><div class="circle"></div></div></div></div>
 	</div>
-		<div class="md-modal md-effect-1" id="modal-1">
-			<div class="md-content">
-				<h3>Start Your Project</h3>
-				<div>
-					<form class="form lead-form form-light" method="post" action="http://vivaco.com/demo/startuply/signup.php" style="padding: 45px 20px 15px;">
-						<div class="form-group col-sm-12">
-							<input id="first_name" type="text" name="first_name" class="form-control required" placeholder="Name">
-						</div>
-                        <div class="form-group col-sm-12">
-							<input id="email" type="email" name="email" class="form-control required email" placeholder="E-mail">
-						</div>
-						<div class="form-group col-sm-12">
-							<input id="phone" type="text" name="phone" class="form-control" placeholder="+91 123 123 1234">
-						</div>
 
-						<div class="form-group col-sm-12">
-							<input type="submit" value="Send" class="btn btn-lg btn-solid btn-block">
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
 	<header>
 		<nav class="navigation navigation-header">
 			<div class="container">
@@ -115,9 +95,8 @@
 						</li>
 					</ul>
 					<ul class="navigation-bar navigation-bar-right">
-					<!-- <button class="md-trigger" data-modal="modal-1">Fade in &amp; Scale</button> -->
 
-						<li class="featured md-trigger" data-modal="modal-1"><a class="btn btn-sm btn-outline-color">Start Your Project</a></li>
+						<li class="featured"><a class="btn btn-sm btn-outline-color" href="register.html">Start Your Project</a></li>
 					</ul>
 				</div>
 			</div>
@@ -142,7 +121,7 @@
 									</div>
 									<div class="icon-block-text">
 										<span class="heading">Free Hosting</span>
-										<p class="thin">We provide over 1 year of dedicated hosting for your application</p>
+										<p class="thin">Provide you upto 1 year free hosting</p>
 									</div>
 								</article>
 							</div>
@@ -154,7 +133,7 @@
 									</div>
 									<div class="icon-block-text">
 										<span class="heading">Consultation</span>
-										<p class="thin">Setup a call with our experts to discuss your idea and tech required for it.  </p>
+										<p class="thin">Provide you free consulation for 1 hour. </p>
 									</div>
 								</article>
 							</div>
@@ -167,7 +146,7 @@
 									</div>
 									<div class="icon-block-text">
 										<span class="heading">Maintenance</span>
-										<p class="thin">Get 3 months of free application support from our deployment team. </p>
+										<p class="thin">Provide you upto 3 Months maintenace free.</p>
 									</div>
 								</article>
 							</div>
@@ -177,8 +156,8 @@
 										<i class="fa fa-diamond highlight"></i>
 									</div>
 									<div class="icon-block-text">
-										<span class="heading">Free Analytics</span>
-										<p class="thin">We help you setup analytics for your application</p>
+										<span class="heading">Free Content</span>
+										<p class="thin">Provide you free content for your website.</p>
 									</div>
 								</article>
 							</div>
@@ -187,8 +166,6 @@
 				</div>
 
 				<div class="col-sm-6" style="padding: 25px 50px;">
-				<h2 style="font-size: 45px;">Get <span class="highlight">Free </span>Quotation
-                    </h2>
 					<form class="form lead-form form-light" method="post" action="http://vivaco.com/demo/startuply/signup.php" style="padding: 45px 20px 15px;">
 						<div class="form-group col-sm-12">
 							<input id="first_name" type="text" name="first_name" class="form-control required" placeholder="Name">
@@ -218,29 +195,29 @@
 					<article class="align-center">
 						<i class="icon  highlight"><i class="fa fa-cog" aria-hidden="true"></i>
 						</i>
-						<span class="heading">Customised Product</span>
+						<span class="heading">Customised Design</span>
 						<p class="">We cater to your custome needs to suit your start up, business or product. Your Idea , Our Execution. </p>
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<article class="align-center">
 						<i class="icon highlight"><i class="fa fa-spinner" aria-hidden="true"></i></i>
-						<span class="heading">Scalabilty</span>
-						<p class="">Every solution that we make is carefully crafted to scale without any issue. 50 users to 50,000 users, our applications have it under control. </p>
+						<span class="heading">Modern Design</span>
+						<p class="">Designed with modern trends and techniques in mind, We will help your product stand out in an already saturated market. </p>
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<article class="align-center">
-						<i class="icon highlight"><i class="fa fa-columns" aria-hidden="true"></i></i>
+						<i class="icon  highlight"><i class="fa fa-columns" aria-hidden="true"></i></i>
 						<span class="heading">Responsive Development</span>
-						<p class="">Built using the latest web technologies like HTML5, CSS3, Bootstrap and jQuery, rest assured Scaledesk will make your product look smashing on every device.</p>
+						<p class="">Built using the latest web technologies like HTML5, CSS3, Bootstrap and jQuery, rest assured Scaledesk will look smashing on every device. </p>
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<article class="align-center">
 						<i class="icon  highlight"><i class="fa fa-laptop" aria-hidden="true"></i></i>
-						<span class="heading">Modern Design</span>
-						<p class="">All components of your applications are carefully thought through . We make the UI as beautiful as possible, whilst also keeping the user experience simplistic. </p>	
+						<span class="heading">Web Design</span>
+						<p class="">We cater to your custome needs to suit your start up, business or product. Your Idea , Our Execution.  </p>
 					</article>
 				</div>
 			</div>
@@ -249,14 +226,14 @@
 					<article class="align-center">
 						<i class="icon highlight"><i class="fa fa-tablet" aria-hidden="true"></i></i>
 						<span class="heading">Mobile Apps</span>
-						<p class=""> Mobile apps are paramount to any product these days. Every product that we ship, we make it a point to make it app enabled as well. You get your product app deployed on every leading app store </p>
+						<p class="">Designed with modern trends and techniques in mind, We will help your product stand out in an already saturated market. </p>
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<article class="align-center">
 						<i class="icon  highlight"><i class="fa fa-pencil" aria-hidden="true"></i></i>
-						<span class="heading">Quality Assurance</span>
-						<p class="">Quality is of paramount importance to us. We have dedicated testing teams. Every piece of software shipped out of scale desk is thoroughly tested.</p>
+						<span class="heading">Custom Ideas</span>
+						<p class="">Built using the latest web technologies like HTML5, CSS3, Bootstrap and jQuery, rest assured Scaledesk will look smashing on every device.</p>
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
@@ -270,7 +247,7 @@
 					<article class="align-center">
 						<i class="icon  highlight"><i class="fa fa-file-text" aria-hidden="true"></i></i>
 						<span class="heading">SEO</span>
-						<p class=""> We have dedicated SEO experts which help get your startup the required visibilty.</p>
+						<p class="">Getting your web content free from traffic and making it visible on all search engines.</p>
 					</article>
 				</div>
 			</div>
@@ -286,29 +263,29 @@
 					<article class="align-center product-inner">
 						<i class="icon  highlight"><i class="fa fa-cog" aria-hidden="true"></i>
 						</i>
-						<span class="heading">Techincal Consultance</span>
-						<p class=""> As technology experts we can help you decide and develop your technology.</p>
+						<span class="heading">Platform Advice</span>
+						<p class=""> We can suggest you the </p>
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<article class="align-center">
 						<i class="icon highlight"><i class="fa fa-spinner" aria-hidden="true"></i></i>
 						<span class="heading">Project Management</span>
-						<p class=""> We help you manage your project effectively, be it traditional or agile based methodologies. </p>
+						<p class=""> It provides methods,knowledge,skills and experience to achieve the project objectives. </p>
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<article class="align-center">
 						<i class="icon  highlight"><i class="fa fa-columns" aria-hidden="true"></i></i>
 						<span class="heading">Maintenance & Support</span>
-						<p class=""> We help maintain and support both small scale and enterprise level application, to ensure smooth operations. </p>
+						<p class="">All the requirement will be maintained in order to keep site content alive. Daily updates with fresh content and periodic maintenance including editing & revising. </p>
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<article class="align-center">
 						<i class="icon  highlight"><i class="fa fa-laptop" aria-hidden="true"></i></i>
-						<span class="heading">Design</span>
-						<p class=""> We help you design your product both as a feature list or as the UI</p>
+						<span class="heading">Hosting</span>
+						<p class="">Web hosting service allows company and people to post a web site or web content onto the web.  </p>
 					</article>
 				</div>
 			</div>
@@ -316,15 +293,15 @@
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<article class="align-center">
 						<i class="icon highlight"><i class="fa fa-tablet" aria-hidden="true"></i></i>
-						<span class="heading">Quality Assurance</span>
-						<p class=""> We have dedicated projects only based on quality assurance work. We take an applicaton and thoroughly test it so that what you get is exactly what you asked for.</p>
+						<span class="heading">E-commerce Product & Services</span>
+						<p class="">Avoid the lengthy research and boundless sourcing process. Everything you need is right here. </p>
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<article class="align-center">
 						<i class="icon  highlight"><i class="fa fa-pencil" aria-hidden="true"></i></i>
-						<span class="heading">Techincal Staffing</span>
-						<p class=""> We help you build your technical team.</p>
+						<span class="heading">System Integration</span>
+						<p class=""> We extent our Expertise in system integration to ensure that the technology is aligned with your Business Objective. </p>
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
@@ -346,93 +323,48 @@
 	</section>
 	<!--pricing table-->
 	<section id="product" class="section product-section align-center dark-text animated" data-animation="fadeInUp" data-duration="500">
-		<div class="container">
-			<div class="section-header">
-				<h2>PRODUCT <span class="highlight">PACKAGES</span></h2>
-				<p class="sub-header">
-                    From Simple content management, blogs and SEO - to a fully featured Business
-					<br />as per your requirements
-				</p>
-			</div>
-			<div class="section-content row">
+		<div class="containe">
+<ul class="cd-container">
+		<li class="cd-service cd-service-divider"></li>
 
-                <div class="col-sm-4">
-                    <div class="package-column">
-                        <div class="package-title">Standard</div>
-                        <div class="package-price">
-                            <div class="price"><span class="currency">&#8377;</span>15,000</div>
-                            <div class="period">Basic</div>
-                        </div>
-                        <div class="package-detail">
-                            <ul class="list-unstyled">
-                                <li>5 Dynamic Pages</li>
-                                <li>Free 1 yr Dedicated hosting</li>
-                                <li>Responsive Design</li>
-                                <li>3 Month Maintenace free</li>
-                                <li>Basic SE0</li>
+		<li class="cd-service cd-service-1">
+			<h2>Web Design</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis pariatur tenetur quod veritatis nulla aspernatur architecto! Fugit, reprehenderit amet deserunt molestiae ut libero facere quasi velit perferendis ullam quis necessitatibus!</p>
+		</li> <!-- cd-service -->
 
-                            </ul>
-                            <li class="featured md-trigger" data-modal="modal-1"><a class="btn btn-sm btn-outline-color">Start Your Project</a></li>
-                        </div>
-                    </div>
-                </div>
+		<li class="cd-service cd-service-2">
+			<h2>Responsive Approach</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis pariatur tenetur quod veritatis nulla aspernatur architecto! Fugit, reprehenderit amet deserunt molestiae ut libero facere quasi velit perferendis ullam quis necessitatibus!</p>
+		</li> <!-- cd-service -->
 
-				<div class="col-sm-4">
-					<div class="package-column">
-						<div class="package-title">Premium</div>
-						<div class="package-price">
-							<div class="price"><span class="currency">&#8377;</span>25,000</div>
-							<div class="period">Standard + Premium</div>
-						</div>
-						<div class="package-detail">
-							<ul class="list-unstyled">
-								<li>8+ Dynamic Pages</li>
-								<li>Custom Design Templates</li>
-								<li>Mobile Friendly</li>
-								<li>Free CMS</li>
-                                <li>On page SEO</li>
-							</ul>
-							<li class="featured md-trigger" data-modal="modal-1"><a class="btn btn-sm btn-outline-color">Start Your Project</a></li>
-						</div>
-					</div>
-				</div>
+		<li class="cd-service cd-service-3">
+			<h2>E-commerce</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis pariatur tenetur quod veritatis nulla aspernatur architecto! Fugit, reprehenderit amet deserunt molestiae ut libero facere quasi velit perferendis ullam quis necessitatibus!</p>
+		</li> <!-- cd-service -->
 
-				<div class="col-sm-4">
-					<div class="package-column">
-						<div class="package-title">Advanced</div>
-						<div class="package-price">
-							<div class="price"><span class="currency">&#8377;</span>50,000</div>
-							<div class="period">Premium + Advance</div>
-						</div>
-						<div class="package-detail">
-							<ul class="list-unstyled">
-								<li>25+ Dynamic pages</li>
-								<li>Fully customizable design</li>
-								<li>Payment Gateway Integraion</li>
-								<li>Google Analytics enabled</li>
-                                <li>Cross Browser Compatible</li>
-							</ul>
-							<a  class="btn btn-outline-color btn-block md-trigger" data-modal="modal-1">Start Your Project</a>
-						</div>
-					</div>
-				</div>
-			</div>
+		<li class="cd-service cd-service-4">
+			<h2>CMS Integration</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis pariatur tenetur quod veritatis nulla aspernatur architecto! Fugit, reprehenderit amet deserunt molestiae ut libero facere quasi velit perferendis ullam quis necessitatibus!</p>
+		</li> <!-- cd-service -->
+
+		<li class="cd-service cd-service-divider"></li>
+	</ul> <!-- cd-services -->
 		</div>
 	</section>
     <section id="newsletter" class="long-block newsletter-section light-text">
         <div class="container align-center">
             <div class="col-sm-12 col-lg-5 animated" data-animation="fadeInLeft" data-duration="500">
                 <article>
-                    <h3 class="text-center" >Get one hour free consultation</h3>
-                    <p class="">Please enter your mobile number to schedule a CALLBACK!!</p>
+                    <h3 class="text-center" >Get 1 hour free consultation</h3>
+                    <p class="">Please submit your details...!</p>
                 </article>
             </div>
             <div class="col-sm-12 col-lg-7 animated" data-animation="fadeInRight" data-duration="500">
                 <form class="form mailchimp-form subscribe-form" style="padding-top: 10px;" action="http://vivaco.com/demo/startuply/&lt;?=$_SERVER['PHP_SELF'];&#32;?&gt;" method="post">
                     <div class="form-group form-inline">
-                        
-                        <input size="25" type="number" class="form-control required" name="NUMBER" placeholder="9999838383" />
-                        <input type="submit" class="btn btn-outline" value="Schedule a Callback" />
+                        <input size="15" type="text" class="form-control required" name="FULLNAME" placeholder="Your name" />
+                        <input size="25" type="email" class="form-control required" name="EMAIL" placeholder="your@email.com" />
+                        <input type="submit" class="btn btn-outline" value="SUBSCRIBE" />
                         <span class="response"><? require_once('assets/mailchimp/inc/store-address.php'); if($_GET['submit']){ echo storeAddress(); } ?></span>
                     </div>
                 </form>
@@ -448,19 +380,28 @@
         <div class="product col-md-4 col-sm-6">
             <div class="product-inner">
                 <div class="product-image-wrapper">
-                    <span class="product-image" style="background-image: url('assets/img/port/atelier-multipurpose-ecommerce-theme1.jpg');"></span>
+                    <span class="product-image" style="background-image: url('assets/img/products/product1_1024x1024.jpg');"></span>
 
 							<span class="product-price-container">
 								<span class="product-price-wrapper">
-									<!-- <span class="product-price">$100.00+</span> -->
+									<span class="product-price">$100.00+</span>
 								</span>
 							</span>
 
                     <div class="product-controls">
                         <div class="product-controls-wrapper">
-                            <a class="btn btn-sm btn-outline-color product-link md-trigger" data-modal="modal-1">Start Your Project</a>
-                     
+                            <a href="product-grid.html#" class="btn btn-sm btn-outline-color product-link">READ&nbsp;MORE</a>
+                            <a href="product-grid.html#" class="btn btn-sm btn-outline-color product-buy"><span class="icon icon-shopping-18"></span>Add to cart</a>
                         </div>
+                    </div>
+                </div>
+
+                <div class="product-content">
+                    <h3 class="product-title"><a title="A Music Album" href="product-grid.html#">A Music Album</a></h3>
+
+                    <div class="product-description">
+                        <p>This is a sample product that show cases the <a href="product-grid.html#" target="_blank">Audio Player</a> extension.</p>
+                        <p>You can easily setup price options to purchase individual songs or the entire album.</p>
                     </div>
                 </div>
             </div>
@@ -470,38 +411,58 @@
         <div class="product col-md-4 col-sm-6">
             <div class="product-inner">
                 <div class="product-image-wrapper">
-                    <span class="product-image" style="background-image: url('assets/img/port/bronx-ecommerce-wordpress-theme.jpg');"></span>
+                    <span class="product-image"></span>
 
 							<span class="product-price-container">
 								<span class="product-price-wrapper">
-									<!-- <span class="product-price">$100.00+</span> -->
+									<span class="product-price">Free</span>
 								</span>
 							</span>
 
                     <div class="product-controls">
                         <div class="product-controls-wrapper">
-                            <a class="btn btn-sm btn-outline-color product-link md-trigger" data-modal="modal-1">Start Your Project</a>
-                     
+                            <a href="product-grid.html#" class="btn btn-sm btn-outline-color product-link">READ&nbsp;MORE</a>
+                            <a href="product-grid.html#" class="btn btn-sm btn-outline-color product-buy"><span class="icon icon-shopping-18"></span>Add to cart</a>
                         </div>
                     </div>
                 </div>
+
+                <div class="product-content">
+                    <h3 class="product-title"><a title="A Music Album" href="product-grid.html#">A Music Album</a></h3>
+
+                    <div class="product-description">
+                        <p>Lundium, montes augue tristique augue? Ac! Vel mattis, nisi pulvinar? Ultrices rhoncus integer, scelerisque phasellus egestas. Sit aenean est nisi nisi aenean pid elit, mid duis? Lectus, lundium duis pulvinar nunc urna rhoncus pid in nisi. Magna? Lectus, nisi ultricies nascetur urna in phasellus cras, urna a massa rhoncus sed facilisis habitasse! Duis? Dapibus vel vel, risus? Cras amet ac, aliquet scelerisque habitasse tempor integer natoque egestas? Urna, lacus nunc? Ultrices cum, scelerisque eros eros urna! Cras cursus dolor etiam tincidunt ac magna porta ut augue, magna eu integer et, magna et duis sit? Dolor, augue pulvinar aliquet magna facilisis. Nisi odio, tincidunt eu, nec pulvinar scelerisque dis penatibus mus turpis, lundium elementum tristique montes mus etiam dolor, hac. Phasellus.</p>
+                    </div>
+                </div>
             </div>
-        </div>        <div class="product col-md-4 col-sm-6">
+        </div>
+
+
+        <div class="product col-md-4 col-sm-6">
             <div class="product-inner">
                 <div class="product-image-wrapper">
-                    <span class="product-image" style="background-image: url('assets/img/port/savoy-grid-style-woocommerce-website-template.jpg');"></span>
+                    <span class="product-image" style="background-image: url('assets/img/products/product1_1024x1024.jpg');"></span>
 
 							<span class="product-price-container">
 								<span class="product-price-wrapper">
-									<!-- <span class="product-price">$100.00+</span> -->
+									<span class="product-price">$100.00+</span>
 								</span>
 							</span>
 
                     <div class="product-controls">
                         <div class="product-controls-wrapper">
-                            <a class="btn btn-sm btn-outline-color product-link md-trigger" data-modal="modal-1">Start Your Project</a>
-                     
+                            <a href="product-grid.html#" class="btn btn-sm btn-outline-color product-link">READ&nbsp;MORE</a>
+                            <a href="product-grid.html#" class="btn btn-sm btn-outline-color product-buy"><span class="icon icon-shopping-18"></span>Add to cart</a>
                         </div>
+                    </div>
+                </div>
+
+                <div class="product-content">
+                    <h3 class="product-title"><a title="A Music Album" href="product-grid.html#">A Music Album</a></h3>
+
+                    <div class="product-description">
+                        <p>This is a sample product that show cases the <a href="product-grid.html#" target="_blank">Audio Player</a> extension.</p>
+                        <p>You can easily setup price options to purchase individual songs or the entire album.</p>
                     </div>
                 </div>
             </div>
@@ -511,64 +472,96 @@
         <div class="product-list row material-view">
 
             <div class="clearfix">
-        <div class="product col-md-4 col-sm-6">
-            <div class="product-inner">
-                <div class="product-image-wrapper">
-                    <span class="product-image" style="background-image: url('assets/img/port/hugo-retro-ecommerce-theme.jpg');"></span>
+                <div class="product col-md-4 col-sm-6">
+                    <div class="product-inner">
+                        <div class="product-image-wrapper">
+                            <span class="product-image" style="background-image: url('assets/img/products/product1_1024x1024.jpg');"></span>
 
 							<span class="product-price-container">
 								<span class="product-price-wrapper">
-									<!-- <span class="product-price">$100.00+</span> -->
+									<span class="product-price">$100.00+</span>
 								</span>
 							</span>
 
-                    <div class="product-controls">
-                        <div class="product-controls-wrapper">
-                            <a class="btn btn-sm btn-outline-color product-link md-trigger" data-modal="modal-1">Start Your Project</a>
-                     
+                            <div class="product-controls">
+                                <div class="product-controls-wrapper">
+                                    <a href="product-grid.html#" class="btn btn-sm btn-outline-color product-link">READ&nbsp;MORE</a>
+                                    <a href="product-grid.html#" class="btn btn-sm btn-outline-color product-buy"><span class="icon icon-shopping-18"></span>Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-content">
+                            <h3 class="product-title"><a title="A Music Album" href="product-grid.html#">A Music Album</a></h3>
+
+                            <div class="product-description">
+                                <p>This is a sample product that show cases the <a href="product-grid.html#" target="_blank">Audio Player</a> extension.</p>
+                                <p>You can easily setup price options to purchase individual songs or the entire album.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>        <div class="product col-md-4 col-sm-6">
-            <div class="product-inner">
-                <div class="product-image-wrapper">
-                    <span class="product-image" style="background-image: url('assets/img/port/shopkeeper-ecommerce-theme.jpg');"></span>
+
+
+                <div class="product col-md-4 col-sm-6">
+                    <div class="product-inner">
+                        <div class="product-image-wrapper">
+                            <span class="product-image"></span>
 
 							<span class="product-price-container">
 								<span class="product-price-wrapper">
-									<!-- <span class="product-price">$100.00+</span> -->
+									<span class="product-price">Free</span>
 								</span>
 							</span>
 
-                    <div class="product-controls">
-                        <div class="product-controls-wrapper">
-                            <a class="btn btn-sm btn-outline-color product-link md-trigger" data-modal="modal-1">Start Your Project</a>
-                     
+                            <div class="product-controls">
+                                <div class="product-controls-wrapper">
+                                    <a href="product-grid.html#" class="btn btn-sm btn-outline-color product-link">READ&nbsp;MORE</a>
+                                    <a href="product-grid.html#" class="btn btn-sm btn-outline-color product-buy"><span class="icon icon-shopping-18"></span>Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-content">
+                            <h3 class="product-title"><a title="A Music Album" href="product-grid.html#">A Music Album</a></h3>
+
+                            <div class="product-description">
+                                <p>Lundium, montes augue tristique augue? Ac! Vel mattis, nisi pulvinar? Ultrices rhoncus integer, scelerisque phasellus egestas. Sit aenean est nisi nisi aenean pid elit, mid duis? Lectus, lundium duis pulvinar nunc urna rhoncus pid in nisi. Magna? Lectus, nisi ultricies nascetur urna in phasellus cras, urna a massa rhoncus sed facilisis habitasse! Duis? Dapibus vel vel, risus? Cras amet ac, aliquet scelerisque habitasse tempor integer natoque egestas? Urna, lacus nunc? Ultrices cum, scelerisque eros eros urna! Cras cursus dolor etiam tincidunt ac magna porta ut augue, magna eu integer et, magna et duis sit? Dolor, augue pulvinar aliquet magna facilisis. Nisi odio, tincidunt eu, nec pulvinar scelerisque dis penatibus mus turpis, lundium elementum tristique montes mus etiam dolor, hac. Phasellus.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>        <div class="product col-md-4 col-sm-6">
-            <div class="product-inner">
-                <div class="product-image-wrapper">
-                    <span class="product-image" style="background-image: url('assets/img/port/north-multipurpose-woocommerce-theme.jpg');"></span>
+
+
+                <div class="product col-md-4 col-sm-6">
+                    <div class="product-inner">
+                        <div class="product-image-wrapper">
+                            <span class="product-image" style="background-image: url('assets/img/products/product1_1024x1024.jpg');"></span>
 
 							<span class="product-price-container">
 								<span class="product-price-wrapper">
-									<!-- <span class="product-price">$100.00+</span> -->
+									<span class="product-price">$100.00+</span>
 								</span>
 							</span>
 
-                    <div class="product-controls">
-                        <div class="product-controls-wrapper">
-                            <a class="btn btn-sm btn-outline-color product-link md-trigger" data-modal="modal-1">Start Your Project</a>
-                     
+                            <div class="product-controls">
+                                <div class="product-controls-wrapper">
+                                    <a href="product-grid.html#" class="btn btn-sm btn-outline-color product-link">READ&nbsp;MORE</a>
+                                    <a href="product-grid.html#" class="btn btn-sm btn-outline-color product-buy"><span class="icon icon-shopping-18"></span>Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-content">
+                            <h3 class="product-title"><a title="A Music Album" href="product-grid.html#">A Music Album</a></h3>
+
+                            <div class="product-description">
+                                <p>This is a sample product that show cases the <a href="product-grid.html#" target="_blank">Audio Player</a> extension.</p>
+                                <p>You can easily setup price options to purchase individual songs or the entire album.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
             </div>
         </div>
         </div>
@@ -578,7 +571,7 @@
 				<i class="icon icon-seo-icons-24 pull-left"></i>
 				<article class="pull-left">
 					<h2>Start Your E-COMMERCE NOW!</h2>
-					<!-- <p class="thin">In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret.</p> -->
+					<p class="thin">In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret.</p>
 				</article>
 			</div>
 
@@ -592,9 +585,9 @@
 			<div class="footer-content row">
 				<div class="col-sm-4 col-xs-12">
 					<div class="logo-wrapper">
-						<img width="130" height="31" src="assets/img/logo.png" alt="Scaledesk Logo" />
+						<img width="130" height="31" src="assets/img/logo-white.png" alt="Scaledesk Logo" />
 					</div>
-					<p>We at Scaledesk help you build your MVP, so that you can validate your idea with minimum effort. As we take care of all the technology & let you concentrate on your business</p>
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco. Qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Nisi ut aliquid ex ea commodi consequatur?</p>
 					<p><strong>Palash Johari, Founder</strong>.</p>
 				</div>
 				<div class="col-sm-5 social-wrap col-xs-12">
@@ -627,7 +620,7 @@
 	</footer>
 
 	<div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>
-<div class="md-overlay"></div><!-- the overlay element -->
+
 	<!--[if lt IE 9]>
 
 	<![endif]-->
@@ -636,27 +629,17 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<!--<![endif]-->
 
-<!-- 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.appear.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.plugin.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.countdown.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
-	<script type="text/javascript" src="assets/js/toastr.min.js"></script> -->
+	<script type="text/javascript" src="assets/js/toastr.min.js"></script>
 	<script type="text/javascript" src="assets/js/startuply.js"></script>
 	<script src="https://use.fontawesome.com/a2fda6af1a.js"></script>
-			<!-- classie.js by @desandro: https://github.com/desandro/classie -->
-		<script src="assets/js/classie.js"></script>
-		<script src="assets/js/modalEffects.js"></script>
+	<script src="assets/js/main.js"></script> <!-- Resource jQuery -->
 
-		<!-- for the blur effect -->
-		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
-		<script>
-			// this is important for IEs
-			var polyfilter_scriptpath = '/js/';
-		</script>
-		<script src="assets/js/cssParser.js"></script>
-		<script src="assets/js/css-filters-polyfill.js"></script>
 </body>
 </html>
