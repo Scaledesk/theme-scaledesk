@@ -216,11 +216,11 @@ html, body {
 /*}*/
 
 @media only screen and (min-width: 1170px) {
-  section #timeline.new-color-0::before {
-    background-color: #c06c69;
-  }
+  /*section#timeline.new-color-0::before {*/
+    /*background-color: #c06c69;*/
+  /*}*/
 
-  section #timeline.new-color-1::before {
+  section#timeline.new-color-1::before {
     background-color: #c06c69;
   }
 
@@ -258,5 +258,11 @@ section#timeline::before {
 }
 
 section#timeline::after {
-  top: 100%;
+  top: 50%;
+}
+footer {
+  position: relative;
+  height: 50%;
+  background: #3e253c;
+  z-index: 2;
 }

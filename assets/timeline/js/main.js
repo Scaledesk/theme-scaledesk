@@ -27,7 +27,7 @@ function updateOnFocusItem(items) {
 }
 
 function bodyBackground(itemsTopValues) {
-	var topPosition = $(window).scrollTop() + $(window).height()/2,
+	var topPosition = $(window).scrollTop() + $(window).height(),
 		servicesNumber = itemsTopValues.length;
 	$.each(itemsTopValues, function(key, value){
 		if ( (itemsTopValues[key] <= topPosition && itemsTopValues[key+1] > topPosition) || (itemsTopValues[key] <= topPosition && key+1 == servicesNumber ) ) {	
