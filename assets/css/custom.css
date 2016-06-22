@@ -6,3 +6,7 @@
 .s-nav{
     text-transform: capitalize !important;
 }
+
+.form.form-light{
+    background-color:  rgba(248, 253, 254, 0.84);
+}
