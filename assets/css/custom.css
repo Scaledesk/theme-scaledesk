@@ -10,3 +10,7 @@
 .form.form-light{
     background-color:  rgba(248, 253, 254, 0.84);
 }
+#portfolio{
+    z-index: 50;
+    background: white;
+}
