@@ -10,7 +10,18 @@
 .form.form-light{
     background-color:  rgba(248, 253, 254, 0.84);
 }
-#portfolio{
+#guarantee{
     z-index: 50;
-    background: white;
+    }
+.package-column .package-price .price{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 80px;
+}
+.package-column .package-price .currency{
+    top:0;
+
+}
+.package-price{
+    padding: 0;
 }

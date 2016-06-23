@@ -97,7 +97,7 @@ html, body {
   z-index: 2;
   min-height: 50px;
   margin-left: 56px;
-  background-color: #3e253c;
+  background-color: #009688;
   padding: 1em 1em 4em;
 }
 .cd-service::before, .cd-service::after {
@@ -260,9 +260,4 @@ section#timeline::before {
 section#timeline::after {
   top: 50%;
 }
-footer {
-  position: relative;
-  height: 50%;
-  background: #3e253c;
-  z-index: 2;
-}
+
