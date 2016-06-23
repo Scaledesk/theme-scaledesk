@@ -1,6 +1,8 @@
 <?php 
 if(isset($_POST['submit'])){
-    $to = "sudo@scaledesk.com"; // this is your Email address
+	echo "1";
+    $to = "sudo@scaledesk.com";
+    echo "1"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
     $first_name = $_POST['first_name'];
     $last_name = $_POST['phone'];
@@ -8,7 +10,7 @@ if(isset($_POST['submit'])){
     $subject2 = "Copy of your form submission";
     $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
     $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
-
+    echo "2";
     $headers = "From:" . $from;
     $headers2 = "From:" . $to;
     mail($to,$subject,$message,$headers);
@@ -17,6 +19,7 @@ if(isset($_POST['submit'])){
     // You can also use header('Location: thank_you.php'); to redirect to another page.
     }
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -72,7 +75,7 @@ if(isset($_POST['submit'])){
 				<div>
 
 					
-					<form class="form lead-form form-light" method="post" action="POST" style="padding: 45px 20px 15px;">
+					<form class="form  form-light" method="post" action="" style="padding: 45px 20px 15px;">
 
 						<div class="form-group col-sm-12">
 							<input id="first_name" type="text" name="first_name" class="form-control required" placeholder="Name">
@@ -85,7 +88,7 @@ if(isset($_POST['submit'])){
 						</div>
 
 						<div class="form-group col-sm-12">
-							<input type="submit" value="submit" class="btn btn-lg btn-solid btn-block">
+							<input type="submit" value="submit" name="submit" class="btn btn-lg btn-solid btn-block">
 						</div>
 					</form>
 				</div>

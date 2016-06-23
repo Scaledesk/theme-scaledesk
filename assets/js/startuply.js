@@ -425,7 +425,7 @@ Startuply = {
             },
 
             submitHandler: function (form) {
-                $.ajax({
+               /* $.ajax({
                     url: form.action,
                     type: 'POST',
                     data: $(form).serialize()
@@ -435,7 +435,7 @@ Startuply = {
                 }).fail(function() {
                     failHandler(form);
 
-                });
+                });*/
             }
         };
 
@@ -447,6 +447,7 @@ Startuply = {
                 else alert('Success');
 
             } else {
+                alert("good");
                 if ( typeof toastr != 'undefined' ) toastr.error('An error occured. Please try again later.');
                 else alert('An error occured. Please try again later.');
 
