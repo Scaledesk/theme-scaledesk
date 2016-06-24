@@ -1,20 +1,47 @@
 <?php
-/*require 'PHPMailerAutoload.php';
+require 'PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
+$mail1 = new PHPMailer;
+
+$email=$_POST['email'];
+$phone=$_POST['phone'];
+$name=$_POST['first_name'];
+$emailadmin="sanchit2411@gmail.com";
+$subject = "GET IN TOUCH.";
+$messageUsers=file_get_contents('template.html');
+$message ='<html>
+<body>
+<div id="abcd" style="text-align:justify;font-size:18px;"> Name:-'.$name.'<br> Email:-'.$email.'<br>Phone:-'.$phone.'</div>
+</body>
+</html>';
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp1.example.com;smtp2.example.com';  // Specify main and backup SMTP servers
+$mail->Host = 'mail.scaledesk.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'user@example.com';                 // SMTP username
-$mail->Password = 'secret';                           // SMTP password
+$mail->Username = 'contact@scaledesk.com';                 // SMTP username
+$mail->Password = 'qazplmq1w2e3r4';                           // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 587;                                    // TCP port to connect to
+$mail->Port = 587;  
+                                  // TCP port to connect to
+$mail1->isSMTP();                                      // Set mailer to use SMTP
+$mail1->Host = 'mail.scaledesk.com';  // Specify main and backup SMTP servers
+$mail1->SMTPAuth = true;                               // Enable SMTP authentication
+$mail1->Username = 'contact@scaledesk.com';                 // SMTP username
+$mail1->Password = 'qazplmq1w2e3r4';                           // SMTP password
+$mail1->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+$mail1->Port = 587;
 
-$mail->setFrom('from@example.com', 'Mailer');
-$mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
+
+
+$mail->setFrom('contact@scaledesk.com', 'Scaledesk');
+$mail->addAddress($email, $name);     // Add a recipient
+
+$mail1->setFrom('contact@scaledesk.com', 'Scaledesk');
+$mail1->addAddress($emailadmin);     // Add a recipient
+
 // $mail->addAddress('ellen@example.com');               // Name is optional
 // $mail->addReplyTo('info@example.com', 'Information');
 // $mail->addCC('cc@example.com');
@@ -24,22 +51,26 @@ $mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
 // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 // $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Here is the subject';
-$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+$mail->Subject = $subject;
+$mail->Body    = $messageUsers;
+
+$mail1->Subject = $subject;
+$mail1->Body    = $message;
 // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-if(!$mail->send()) {
-    /*echo 'Message could not be sent.';
-    echo 'Mailer Error: ' . $mail->ErrorInfo;*/
-   /* return "not ok";
+if(!$mail1->send()) {
+    return "not ok";
 } else {
-    return "ok";
-}*/
+    // return "ok";
+    if($mail->send()){
+    	return "ok";
+    }
+}
 
 
 
 /* echo json_encode("no");*/
-if(isset($_POST['email'])) 
+/*if(isset($_POST['email'])) 
 {
       
 $email=$_POST['email'];
@@ -65,12 +96,12 @@ $headers = "Content-type: text/html;charset=iso-8859-1" . "\r\n";
            if(mail($email,$subject,$messageUsers,$headers)){
       	unset($headers,$message,$email,$name,$phone,$emailadmin,$subject);
       
-       echo json_encode("ok");
+       		return json_encode("ok");
              } 
           else{
       			 unset($headers,$message,$email,$name,$phone,$emailadmin,$subject);
 	    
-           echo json_encode("ok");
+           	return json_encode("ok");
                  }
        
        
@@ -78,13 +109,12 @@ $headers = "Content-type: text/html;charset=iso-8859-1" . "\r\n";
        else{
       			 unset($headers,$message,$email,$name,$phone,$emailadmin,$subject);
 	     /* header("location: index.php?msg=Some  error Occurred");*/
-        echo json_encode("no");
+  /*      	return echo json_encode("no");
          }
       
 }
 else{
      /* echo json_encode("singh");*/
-     echo json_encode("no");
-	/*header("location: index.php");*/
-}
-?>
+     // echo json_encode("no");
+	/*header("location: index.php");
+}*/
