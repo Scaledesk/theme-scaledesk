@@ -49,7 +49,7 @@ input[type=number]::-webkit-outer-spin-button {
      border: 3px solid #dd4b39;
 }
 
-@media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 700px) {
     .form.custom-form-pad{
 
     padding: 35px 5px 0px 5px;   
@@ -59,6 +59,6 @@ input[type=number]::-webkit-outer-spin-button {
     }
     
     .heading-block{
-        padding-top: 60px;
+        padding-top: 50px !important;
     }
 }
