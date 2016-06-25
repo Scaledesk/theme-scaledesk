@@ -3,14 +3,12 @@ require 'PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
 
-$phone=$_POST['NUMBER'];
-echo $phone;
-// $emailadmin="sanchit2411@gmail.com";
- $emailadmin="javedahamad4@gmail.com";
+$NUMBER=$_POST['NUMBER'];
+$emailadmin="sanchit2411@gmail.com";
 $subject = "GET IN TOUCH.";
 $message ='<html>
 <body>
-<div id="abcd" style="text-align:justify;font-size:18px;"><br>Phone:-'.$phone.'</div>
+<div id="abcd" style="text-align:justify;font-size:18px;"> Number:-'.$NUMBER.'</div>
 </body>
 </html>';
 
@@ -25,21 +23,16 @@ $mail->IsHTML(true);
                                   // TCP port to connect to
 
 
+
 $mail->setFrom('contact@scaledesk.com', 'Scaledesk');
 $mail->addAddress($emailadmin);     // Add a recipient
-
 
 
 $mail->Subject = $subject;
 $mail->Body    = $message;
 
-
 if(!$mail->send()) {
     echo "not ok";
 } else {
-    echo "ok"
+      echo "ok";
 }
-
-
-?>
-

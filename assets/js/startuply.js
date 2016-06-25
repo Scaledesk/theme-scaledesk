@@ -369,11 +369,13 @@ Startuply = {
                 type: 'POST',
                 data: $(num).serialize(),
                 success: function(msg) {
-                        if(msg==='ok'){
-                            form.reset();
-                            if ( typeof toastr != 'undefined' ) toastr.success('Success! You are now subscribed to our newsletter!');
+                        if( msg === 'ok' ){
+                            console.log(msg);
+                            num.reset();
+                            if ( typeof toastr != 'undefined' ) toastr.success('Thank you for contact us!');
                             else alert('Success');
                         } else {
+                            console.log(msg);
                             if ( typeof toastr != 'undefined' ) toastr.error(Error);
                             else alert('error');    
                         }
