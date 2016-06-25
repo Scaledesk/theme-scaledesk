@@ -16,8 +16,6 @@ $message ='<html>
 </body>
 </html>';
 
-//$mail->SMTPDebug = 3;                               // Enable verbose debug output
-
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'mail.scaledesk.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
@@ -25,6 +23,7 @@ $mail->Username = 'contact@scaledesk.com';                 // SMTP username
 $mail->Password = 'qazplmq1w2e3r4';                           // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;  
+$mail->IsHTML(true);  
                                   // TCP port to connect to
 $mail1->isSMTP();                                      // Set mailer to use SMTP
 $mail1->Host = 'mail.scaledesk.com';  // Specify main and backup SMTP servers
@@ -33,6 +32,7 @@ $mail1->Username = 'contact@scaledesk.com';                 // SMTP username
 $mail1->Password = 'qazplmq1w2e3r4';                           // SMTP password
 $mail1->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail1->Port = 587;
+$mail1->IsHTML(true);  
 
 
 
@@ -42,28 +42,19 @@ $mail->addAddress($email, $name);     // Add a recipient
 $mail1->setFrom('contact@scaledesk.com', 'Scaledesk');
 $mail1->addAddress($emailadmin);     // Add a recipient
 
-// $mail->addAddress('ellen@example.com');               // Name is optional
-// $mail->addReplyTo('info@example.com', 'Information');
-// $mail->addCC('cc@example.com');
-// $mail->addBCC('bcc@example.com');
-
-// $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-// $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-// $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = $subject;
 $mail->Body    = $messageUsers;
 
 $mail1->Subject = $subject;
 $mail1->Body    = $message;
-// $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 if(!$mail1->send()) {
-    return "not ok";
+    echo "not ok";
 } else {
     // return "ok";
     if($mail->send()){
-    	return "ok";
+    	echo "ok";
     }
 }
 
@@ -88,7 +79,8 @@ $message ='<html>
             
  $messageUsers=file_get_contents('template.html');
 $headers = "MIME-Version: 1.0" . "\r\n";
-$headers = "From:sudo@scaledesk.com\r\n";
+$headers = "From:sudo@scaledesk.com\r\n"
+;
 $headers = "Content-type: text/html;charset=iso-8859-1" . "\r\n";
       if(mail($emailadmin,$subject,$message,$headers))
  {
