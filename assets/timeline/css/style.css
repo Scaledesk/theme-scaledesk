@@ -145,14 +145,14 @@ html, body {
 .cd-service p {
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 1.4;
+  line-height: 1;
   color: rgba(255, 255, 255, 0.5);
 }
 @media only screen and (min-width: 1170px) {
   .cd-service {
     min-height: 525px;
     margin-left: 420px;
-    padding: 6em 2em;
+    padding: 4em 2em;
   }
   .cd-service::before, .cd-service::after {
     width: 420px;
