@@ -1,0 +1,17 @@
+.scale-portfolio{
+    height: 450px;
+    width: 770px;
+    padding-top: 40px;
+}
+.s-nav{
+    text-transform: capitalize !important;
+}
+
+.form.form-light{
+    background: rgba(255, 255, 255, 0.83);
+    
+}
+#portfolio{
+    z-index: 50;
+    background: white;
+}

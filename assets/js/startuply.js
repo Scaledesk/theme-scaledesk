@@ -328,8 +328,9 @@ Startuply = {
 
         mailchimpHandler = function (event) {
             event.preventDefault();
-
-            var $firstNameField = $(this).find('[name=FNAME]'),
+                 num = this; 
+                // console.log($(this).find('NUMBER').val());
+            /*var $firstNameField = $(this).find('[name=FNAME]'),
                 $lastNameField = $(this).find('[name=LNAME]'),
                 $fullnameField = $(this).find('[name=FULLNAME]'),
                 $emailField = $(this).find('[name=EMAIL]'),
@@ -357,26 +358,27 @@ Startuply = {
             if ( $phoneField.length && $phoneField.val().length ) {
                 phone = $phoneField.val();
                 data.phone = escape(phone);
-            }
+            }*/
 
             if ( typeof toastr == 'undefined' ) $responseBlock.html('<span class="notice_message">Adding email address...</span>');
 
-            data.ajax = true;
+            // data.ajax = true;
 
             $.ajax({
-                url: '/assets/mailchimp/inc/store-address.php',
-                data: data,
-
+                url: num.action,
+                type: 'POST',
+                data: $(num).serialize(),
                 success: function(msg) {
-                    if ( msg.indexOf('Success') != -1 ) {
-                        if ( typeof toastr != 'undefined' ) toastr.success('Success! You are now subscribed to our newsletter!');
-                        else if ( $responseBlock.length ) $responseBlock.html('<span class="success-message">Success! You are now subscribed to our newsletter!</span>');
-
-                    } else {
-                        if ( typeof toastr != 'undefined' ) toastr.error(msg);
-                        else if ( $responseBlock.length ) $responseBlock.html('<span class="error-message">' + msg + '</span>');
-
-                    }
+                        if( msg === 'ok' ){
+                            console.log(msg);
+                            num.reset();
+                            if ( typeof toastr != 'undefined' ) toastr.success('Thank you for contact us!');
+                            else alert('Success');
+                        } else {
+                            console.log(msg);
+                            if ( typeof toastr != 'undefined' ) toastr.error(Error);
+                            else alert('error');    
+                        }
                 }
             });
         }
@@ -443,7 +445,7 @@ Startuply = {
             if( msg === 'ok' ) {
                 form.reset();
 
-                if ( typeof toastr != 'undefined' ) toastr.success('Success');
+                if ( typeof toastr != 'undefined' ) toastr.success('Thank You for contacting us!');
                 else alert('Success');
 
             } else {
