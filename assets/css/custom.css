@@ -94,3 +94,9 @@ input[type=number]::-webkit-outer-spin-button {
         display: none;
     }
 }
+.scale-block{
+    margin-bottom: 50px;
+}
+#services{
+    background: #f0f0f1;
+}
