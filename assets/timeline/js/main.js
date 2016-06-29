@@ -6,6 +6,7 @@ jQuery(document).ready(function($) {
 	var topValueFillingBlocks = [];
 	fillingBlocks.each(function(index){
 		var topValue = $(this).offset().top;
+		console.log("topv"+topValue);
 		topValueFillingBlocks[topValueFillingBlocks.length] = topValue;
 	});
 	console.log(topValueFillingBlocks);
@@ -30,7 +31,7 @@ function bodyBackground(itemsTopValues) {
 	var topPosition = $(window).scrollTop() + $(window).height(),
 		servicesNumber = itemsTopValues.length;
 	$.each(itemsTopValues, function(key, value){
-		if ( (itemsTopValues[key] <= topPosition && itemsTopValues[key+1] > topPosition) || (itemsTopValues[key] <= topPosition && key+1 == servicesNumber ) ) {	
+		if ( (itemsTopValues[key] <= topPosition && itemsTopValues[key+1] > topPosition) || (itemsTopValues[key] <= topPosition && key+1 == servicesNumber ) ) {
 			$('section#timeline').removeClass('new-color-'+(key-1)+' new-color-'+(key+1)).addClass('new-color-'+key);
 		}
 	});

@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -21,7 +21,7 @@ html * {
 
 /*}*/
 
-/* -------------------------------- 
+/* --------------------------------
 
 Modules - reusable parts of our design
 
@@ -39,9 +39,9 @@ Modules - reusable parts of our design
   clear: both;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main components 
+Main components
 
 -------------------------------- */
 html, body {
@@ -239,7 +239,7 @@ section#timeline::before, section#timeline::after {
   /* trick to remove some annoying flickering on webkit browsers */
   width: 89.8%;
   max-width: 1170px;
-  left: 50%;
+  left: 40%;
   right: auto;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
