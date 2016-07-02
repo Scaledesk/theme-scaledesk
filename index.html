@@ -12,6 +12,11 @@
 	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.jpg">
 	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.jpg">
 	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.jpg">
+	<!--   *******  Tympanus Modal ************* -->
+	<link rel="stylesheet" type="text/css" href="assets/tmypa-modal/css/default.css" />
+	<link rel="stylesheet" type="text/css" href="assets/tmypa-modal/css/component.css" />
+
+	<!--    Tympanus Modal CSS end-->
 	<link rel="stylesheet" type="text/css" href="assets/css/custom-animations.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
@@ -29,6 +34,31 @@
 	<!-- Preloader -->
 	<div class="preloader-mask">
 		<div class="preloader"><div class="spin base_clr_brd"><div class="clip left"><div class="circle"></div></div><div class="gap"><div class="circle"></div></div><div class="clip right"><div class="circle"></div></div></div></div>
+	</div>
+	<div class="md-modal md-effect-1" id="modal-1">
+		<div class="md-content">
+			<h3>Start Your Project</h3>
+			<div>
+
+
+				<form class="form lead-form form-light" method="post" action="POST" style="padding: 45px 20px 15px;">
+
+					<div class="form-group col-sm-12">
+						<input id="first_name" type="text" name="first_name" class="form-control required" placeholder="Name">
+					</div>
+					<div class="form-group col-sm-12">
+						<input id="email" type="email" name="email" class="form-control required email" placeholder="E-mail">
+					</div>
+					<div class="form-group col-sm-12">
+						<input id="phone" type="text" name="phone" class="form-control" placeholder="Contact Number">
+					</div>
+
+					<div class="form-group col-sm-12">
+						<input type="submit" value="submit" class="btn btn-lg btn-solid btn-block">
+					</div>
+				</form>
+			</div>
+		</div>
 	</div>
 
 	<!-- Header -->
@@ -50,9 +80,9 @@
 						<li ><a class="s-nav" href="#hero">What we are</a></li>
 						<li><a class="s-nav" href="#about">Who we are</a></li>
 						<li><a class="s-nav" href="#features">Portfolio</a></li>
-						<li><a class="s-nav" href="#product">Our Work-Flow</a></li>
-						<li><a class="s-nav" href="#feedback">Get in Touch</a></li>
-						<li><a class="s-nav" href="#team">Team</a></li>
+						<li><a class="s-nav" href="#features-list">Features</a></li>
+						<li><a class="s-nav" href="#newsletter">Get in Touch</a></li>
+						<li><a class="s-nav" href="#clients">Clients</a></li>
 						<li><a class="s-nav" href="#guarantee">Contacts</a></li>
 					</ul>
 
@@ -65,16 +95,38 @@
 		<div class="overlay"></div>
 		<div class="heading-block align-center centered-block">
 			<div class="container">
+				<div class="col-sm-6 align-left scale-banner">
 				<div class="animated" data-animation="fadeIn" data-duartion="500">
 					<h2 class="highlight"> Design, Collaborate, Develop, Excel</h2>
 					<p class="sub-title">We are Scaledesk - Webstudio, We help startups <i>START-UP </i>!</p>
 				</div>
 				<div class="animated" data-animation="fadeInUp" data-duartion="500" data-delay="200">
-					<a href="#" class="btn btn-outline ">Get started</a>
+					<a href="#" class="btn btn-outline md-trigger list-unstyled" data-modal="modal-1">Get started</a>
+				</div>
+			</div>
+				<div class="col-sm-6" style="padding: 25px 50px;">
+					<h2 style="font-size: 45px;">Get <span class="highlight">Free </span>Quotation
+					</h2>
+					<form class="form lead-form form-light custom-form-pad" method="post" action="PHPMailer/MailFunction.php" >
+						<div class="form-group col-sm-12">
+							<input id="first_name" type="text" name="first_name" class="form-control required" placeholder="Name">
+						</div>
+						<div class="form-group col-sm-12">
+							<input id="email" type="email" name="email" class="form-control required email" placeholder="E-mail">
+						</div>
+						<div class="form-group col-sm-12">
+							<input id="phone" type="text" name="phone" class="form-control" placeholder="Contact Number">
+						</div>
+
+						<div class="form-group col-sm-12">
+							<input type="submit" value="Send" class="btn btn-lg btn-solid btn-block">
+						</div>
+					</form>
+				</div>
 				</div>
 			</div>
 		</div>
-	</div>
+
 
 	<section id="about" class="section about-section align-center dark-text">
 		<div class="container">
@@ -101,8 +153,8 @@
 									One of the side effects of responsive design has meant that a lot of sites look similar. Design patterns have matured and as such, there’s little in the way of innovation when it comes to UI patterns.
 								</p>
 								<br/>
-								<a href="#" class="btn btn-outline-color">Get Templates</a>
-								<a href="#" class="btn btn-outline-color">Choose Design</a>
+								<!--<a href="#" class="btn btn-outline-color">Get Templates</a>-->
+								<!--<a href="#" class="btn btn-outline-color">Choose Design</a>-->
 							</article>
 						</div>
 					</div>
@@ -138,7 +190,7 @@
 							<article class="align-center">
 								<i class="howitworks icon icon-shopping-04 highlight"></i>
 								<span class="heading">Design</span>
-								<p class="thin" >We help you design your product both as a feature list or as the UI
+								<p class="thin" >We help you design your website as well as your product; both as a feature list or as the User Interface.
 								</p>
 							</article>
 							<!--<span class="icon icon-arrows-04"></span>-->
@@ -155,7 +207,7 @@
 							<article class="align-center">
 								<i class="howitworks icon icon-seo-icons-05 highlight"></i>
 								<span class="heading">Maintenance & Hosting</span>
-								<p class="thin" >Proper maintained in order to keep site content alive.<br/>We provide top notch hosting solutions post a web site or web content onto the web.</p>
+								<p class="thin" >Proper maintained in order to keep site content alive.We provide top notch hosting solutions post a web site or web content onto the web.</p>
 							</article>
 						</div>
 					</div>
@@ -204,8 +256,10 @@
 
 	<section id="features" class="section features-section align-center inverted">
 		<div class="container">
+			<h2>Our Portfolio</h2>
 			<div class="section-content">
 				<div class="featured-tab">
+
 					<ul class="list-unstyled">
 						<li class="active">
 							<a href="index-clickthrough.html#home" data-toggle="tab">
@@ -248,91 +302,88 @@
 
 	<section id="features-list" class="section features-list-section align-center dark-text">
 		<div class="container">
+			<h4>Our Features</h4>
 			<div class="clearfix animated" data-duration="500" data-animation="fadeInRight">
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<article class="align-center">
-						<i class="icon  highlight"><i class="fa fa-cog" aria-hidden="true"></i>
-						</i>
-						<span class="heading">Customised Design</span>
+						<i class="icon icon-seo-icons-02 highlight"></i>
+						<span class="heading">Customised Product</span>
 						<p class="">We cater to your custome needs to suit your start up, business or product. Your Idea , Our Execution. </p>
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<article class="align-center">
-						<i class="icon highlight"><i class="fa fa-spinner" aria-hidden="true"></i></i>
-						<span class="heading">Modern Design</span>
-						<p class="">Designed with modern trends and techniques in mind, We will help your product stand out in an already saturated market. </p>
+						<i class="icon icon-office-45 highlight"></i>
+						<span class="heading">Scalabilty</span>
+						<p class="">Every solution that we make is carefully crafted to scale without any issue. 50 users to 50,000 users, our applications have it under control. </p>
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<article class="align-center">
-						<i class="icon  highlight"><i class="fa fa-columns" aria-hidden="true"></i></i>
+						<i class="icon icon-seo-icons-27 highlight"></i>
 						<span class="heading">Responsive Development</span>
-						<p class="">Built using the latest web technologies like HTML5, CSS3, Bootstrap and jQuery, rest assured Scaledesk will look smashing on every device. </p>
+						<p class="">Built using the latest web technologies like HTML5, CSS3, Bootstrap and jQuery, rest assured Scaledesk will make your product look smashing on every device.</p>
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<article class="align-center">
-						<i class="icon  highlight"><i class="fa fa-laptop" aria-hidden="true"></i></i>
-						<span class="heading">Web Design</span>
-						<p class="">In this track, you’ll get the design and we will build beautiful websites by providing the basic principles of design like branding, color theory, and typography which are all instrumental in the design process of a website. You’ll also learn HTML and CSS.
-						</p>
+						<i class="icon icon-seo-icons-04 highlight"></i>
+						<span class="heading">Modern Design</span>
+						<p class="">All components of your applications are carefully thought through . We make the UI as beautiful as possible, whilst also keeping the user experience simplistic. </p>
 					</article>
 				</div>
 			</div>
 			<div class="clearfix animated" data-duration="500" data-delay="500" data-animation="fadeInLeft">
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<article class="align-center">
-						<i class="icon highlight"><i class="fa fa-tablet" aria-hidden="true"></i></i>
+						<i class="icon icon-multimedia-05 highlight"></i>
 						<span class="heading">Mobile Apps</span>
-						<p class="">We make powerful and responsive app that helps Startups grow their businesses.
-						</p>
+						<p class=""> Mobile apps are paramount to any product these days. Every product that we ship, we make it a point to make it app enabled as well. You get your product app deployed on every leading app store </p>
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<article class="align-center">
-						<i class="icon  highlight"><i class="fa fa-pencil" aria-hidden="true"></i></i>
-						<span class="heading">Custom Ideas</span>
-						<p class="">Built using the latest web technologies like HTML5, CSS3, Bootstrap and jQuery, rest assured Scaledesk will look smashing on every device.</p>
+						<i class="icon icon-seo-icons-04 highlight"></i>
+						<span class="heading">Quality Assurance</span>
+						<p class="">Quality is of paramount importance to us. We have dedicated testing teams. Every piece of software shipped out of scale desk is thoroughly tested.</p>
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<article class="align-center">
 						<i class="icon highlight"><i class="fa fa-th-large" aria-hidden="true"></i></i>
 						<span class="heading">Web Optimization</span>
-						<p class="">Optimization produces hig that out-perform on every measure; traffic, speed, conversion rates, sell-throughs, and, most importantly, return on your investment.</p>
+						<p class="">Optimization produces highly competitive web sites that out-perform on every measure; traffic, speed, conversion rates, sell-throughs, and, most importantly, return on your investment.</p>
 					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<article class="align-center">
-						<i class="icon  highlight"><i class="fa fa-file-text" aria-hidden="true"></i></i>
+						<i class="icon icon-seo-icons-01 highlight"></i>
 						<span class="heading">SEO</span>
-						<p class="">Getting your web content free from traffic and making it visible on all search engines.</p>
+						<p class=""> We have dedicated SEO experts which help get your startup the required visibilty.</p>
 					</article>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="newsletter" class="long-block newsletter-section light-text">
-		<div class="container align-center">
-			<div class="col-sm-12 col-lg-5 animated" data-animation="fadeInLeft" data-duration="500">
-				<article>
-					<h3>GET UPDATES FROM US</h3>
-					 <p class="">We will contact you soon...!</p>
-				</article>
-			</div>
-			<div class="col-sm-12 col-lg-7 animated" data-animation="fadeInRight" data-duration="500">
-				<form class="form mailchimp-form subscribe-form" style="padding-top: 10px;" action="http://vivaco.com/demo/startuply/&lt;?=$_SERVER['PHP_SELF'];&#32;?&gt;" method="post">
-					<div class="form-group form-inline">
-						<input size="15" type="text" class="form-control required" name="FULLNAME" placeholder="Your name" />
-						<input size="25" type="email" class="form-control required" name="EMAIL" placeholder="your@email.com" />
-						<input type="submit" class="btn btn-outline" value="SUBSCRIBE" />
-						<span class="response"><? require_once('assets/mailchimp/inc/store-address.php'); if($_GET['submit']){ echo storeAddress(); } ?></span>
-					</div>
-				</form>
-			</div>
+	<section id="newsletter" class="long-block newsletter-section light-text"><div class="container align-center">
+		<div class="col-sm-12 col-lg-5 animated" data-animation="fadeInLeft" data-duration="500">
+			<article>
+				<h3 class="text-center" >Get one hour free consultation</h3>
+				<p class="">Please enter your mobile number to schedule a CALLBACK!!</p>
+			</article>
 		</div>
+		<div class="col-sm-12 col-lg-7 animated" data-animation="fadeInRight" data-duration="500">
+			<form class="form mailchimp-form subscribe-form" style="padding-top: 10px;" action="PHPMailer/MailContactNumber.php" method="post">
+				<div class="form-group form-inline">
+
+					<input size="25" type="number" class="form-control required" name="NUMBER" placeholder="Phone Number" />
+					<input type="submit" class="btn btn-outline" value="Schedule a Callback" />
+					<span class="response"></span>
+				</div>
+			</form>
+		</div>
+	</div>
 	</section>
 
 	<section id="awards" class="section awards-section align-center dark-text animated" data-animation="fadeInDown" data-duration="500">
@@ -384,8 +435,11 @@
 					<p class="thin">Expand your business by website</p>
 				</article>
 			</div>
-			<div class="col-md-12 col-lg-3">
-				<a href="#" class="btn btn-outline" style="margin-top: 7px;">Start Now</a>
+			<!--<div class="col-md-12 col-lg-3">-->
+				<!--<a href="#" class="btn btn-outline md-trigger list-unstyled" data-modal="modal-1" style="margin-top: 7px;">Start Now</a>-->
+			<!--</div>-->
+			<div class="animated col-md-12 col-lg-3" data-animation="fadeInUp" data-duartion="500" data-delay="200">
+				<a href="#" class="btn btn-outline md-trigger list-unstyled" data-modal="modal-1">Start now</a>
 			</div>
 		</div>
 	</section>
@@ -412,9 +466,9 @@
 				<div class="col-sm-3 col-xs-12">
 					<strong class="heading">Contact Us</strong>
 					<ul class="list-unstyled">
-						<li><span class="icon icon-chat-messages-14"></span><a href="mailto:palashjohari@gmail.com">contact@scaledesk.com</a></li>
+						<li><span class="icon icon-chat-messages-14"></span><a href="mailto:contact@scaledesk.com">contact@scaledesk.com</a></li>
 						<li><span class="icon icon-seo-icons-34"></span>A-36, Sector 4, Noida, U.P</li>
-						<li><span class="icon icon-seo-icons-17"></span> +91 120 4162705</li>
+						<li><span class="icon icon-seo-icons-17"></span><a href="tel:0120 4162705"> +91 120 4162705</a></li>
 					</ul>
 				</div>
 			</div>
@@ -423,7 +477,7 @@
 	</footer>
 
 	<div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>
-
+	<div class="md-overlay"></div><!-- the overlay element -->
 	<!--[if lt IE 9]>
 		<!--<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js?ver=1"></script>-->
 	<!--<![endif]&ndash;&gt;-->
@@ -441,6 +495,19 @@
 	<script type="text/javascript" src="assets/js/toastr.min.js"></script>
 	<script type="text/javascript" src="assets/js/startuply.js"></script>
 	<script src="https://use.fontawesome.com/a2fda6af1a.js"></script>
+	<script src="assets/js/modalEffects.js"></script>
+	<script src="assets/js/classie.js"></script>
+
+	<!-- for the blur effect -->
+	<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+	<script>
+		// this is important for IEs
+		var polyfilter_scriptpath = '/js/';
+	</script>
+	<!--
+            <script src="assets/js/cssParser.js"></script>
+            <script src="assets/js/css-filters-polyfill.js"></script>
+    -->
 
 </body>
 </html>
