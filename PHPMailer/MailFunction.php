@@ -16,30 +16,53 @@ $message ='<html>
 </body>
 </html>';
 
-$mail->isSMTP();                                      // Set mailer to use SMTP
+/*$mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'mail.scaledesk.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'contact@scaledesk.com';                 // SMTP username
 $mail->Password = 'qazplmq1w2e3r4';                           // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;  
-$mail->IsHTML(true);  
-                                  // TCP port to connect to
-$mail1->isSMTP();                                      // Set mailer to use SMTP
+$mail->IsHTML(true);  */
+$mail->isSMTP();                                      // Set mailer to use SMTP
+$mail->Host = 'email-smtp.us-west-2.amazonaws.com';  // Specify main and backup SMTP servers
+$mail->SMTPAuth = true;                               // Enable SMTP authentication
+$mail->Username = 'AKIAJHQ3XNEXXHP27ZSA';                 // SMTP username
+$mail->Password = 'AoeE41tcpicmrBVhhdVtiA9pUIvKCD7rndYhnsUalQCj';                           // SMTP password
+$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 465;// TCP port to connect to
+$mail->IsHTML(true);
+
+$mail->setFrom('hi@imzolo.com', 'Scaledesk');
+//$mail->addAddress('ellen@example.com');               // Name is optional
+$mail->addReplyTo('hi@imzolo.com', 'noreply');
+// TCP port to connect to
+/*$mail1->isSMTP();                                      // Set mailer to use SMTP
 $mail1->Host = 'mail.scaledesk.com';  // Specify main and backup SMTP servers
 $mail1->SMTPAuth = true;                               // Enable SMTP authentication
 $mail1->Username = 'contact@scaledesk.com';                 // SMTP username
 $mail1->Password = 'qazplmq1w2e3r4';                           // SMTP password
 $mail1->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail1->Port = 587;
-$mail1->IsHTML(true);  
+$mail1->IsHTML(true);
+*/
+
+$mail1->isSMTP();                                      // Set mailer to use SMTP
+$mail1->Host = 'email-smtp.us-west-2.amazonaws.com';  // Specify main and backup SMTP servers
+$mail1->SMTPAuth = true;                               // Enable SMTP authentication
+$mail1->Username = 'AKIAJHQ3XNEXXHP27ZSA';                 // SMTP username
+$mail1->Password = 'AoeE41tcpicmrBVhhdVtiA9pUIvKCD7rndYhnsUalQCj';                           // SMTP password
+$mail1->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+$mail1->Port = 465;// TCP port to connect to
+$mail1->IsHTML(true);
+
+$mail1->setFrom('hi@imzolo.com', 'Scaledesk');
 
 
-
-$mail->setFrom('contact@scaledesk.com', 'Scaledesk');
+//$mail->setFrom('contact@scaledesk.com', 'Scaledesk');
 $mail->addAddress($email, $name);     // Add a recipient
 
-$mail1->setFrom('contact@scaledesk.com', 'Scaledesk');
+//$mail1->setFrom('contact@scaledesk.com', 'Scaledesk');
 $mail1->addAddress($emailadmin);     // Add a recipient
 
 
