@@ -84,12 +84,11 @@ if(isset($_POST['submit'])){
 				<div>
 
 
-					<form class="form lead-form form-light" method="post" action="POST" style="padding: 45px 20px 15px;">
-
+					<form class="form lead-form form-light custom-form-pad" method="post" action="PHPMailer/MailFunction.php" >
 						<div class="form-group col-sm-12">
 							<input id="first_name" type="text" name="first_name" class="form-control required" placeholder="Name">
 						</div>
-                        <div class="form-group col-sm-12">
+						<div class="form-group col-sm-12">
 							<input id="email" type="email" name="email" class="form-control required email" placeholder="E-mail">
 						</div>
 						<div class="form-group col-sm-12">
@@ -97,7 +96,7 @@ if(isset($_POST['submit'])){
 						</div>
 
 						<div class="form-group col-sm-12">
-							<input type="submit" value="submit" class="btn btn-lg btn-solid btn-block">
+							<input type="submit" value="Send" class="btn btn-lg btn-solid btn-block">
 						</div>
 					</form>
 				</div>
@@ -441,10 +440,13 @@ if(isset($_POST['submit'])){
 			</article>
 		</div>
 		<div class="col-sm-12 col-lg-7 animated" data-animation="fadeInRight" data-duration="500">
-			<form class="form mailchimp-form subscribe-form" style="padding-top: 10px;" action="PHPMailer/MailContactNumber.php" method="post">
+			<div class="col-sm-12 col-lg-7 animated" data-animation="fadeInRight" data-duration="500">
+		<form class="form subscribe-form" method="post" action="PHPMailer/MailFunction.php">
+			<!-- <form class="form mailchimp-form subscribe-form" style="padding-top: 10px;" action="PHPMailer/MailContactNumber.php" method="post"> -->
 				<div class="form-group form-inline">
-
-					<input size="25" type="number" class="form-control required" name="NUMBER" placeholder="Phone Number" />
+<input id="email" type="hidden" name="email" class="form-control required email" placeholder="E-mail" value="pal@asd.com">
+<input id="first_name" type="hidden" name="first_name" class="form-control required" placeholder="Name" value="schedule">
+					<input id= "phone"size="25" type="number" class="form-control required" name="phone" placeholder="Phone Number" />
 					<input type="submit" class="btn btn-outline" value="Schedule a Callback" />
 					<span class="response"></span>
 				</div>

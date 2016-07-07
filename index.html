@@ -45,22 +45,21 @@
 			<div>
 
 
-				<form class="form lead-form form-light" method="post" action="POST" style="padding: 45px 20px 15px;">
+				<form class="form lead-form form-light custom-form-pad" method="post" action="PHPMailer/MailFunction.php" >
+						<div class="form-group col-sm-12">
+							<input id="first_name" type="text" name="first_name" class="form-control required" placeholder="Name">
+						</div>
+						<div class="form-group col-sm-12">
+							<input id="email" type="email" name="email" class="form-control required email" placeholder="E-mail">
+						</div>
+						<div class="form-group col-sm-12">
+							<input id="phone" type="text" name="phone" class="form-control" placeholder="Contact Number">
+						</div>
 
-					<div class="form-group col-sm-12">
-						<input id="first_name" type="text" name="first_name" class="form-control required" placeholder="Name">
-					</div>
-					<div class="form-group col-sm-12">
-						<input id="email" type="email" name="email" class="form-control required email" placeholder="E-mail">
-					</div>
-					<div class="form-group col-sm-12">
-						<input id="phone" type="text" name="phone" class="form-control" placeholder="Contact Number">
-					</div>
-
-					<div class="form-group col-sm-12">
-						<input type="submit" value="submit" class="btn btn-lg btn-solid btn-block">
-					</div>
-				</form>
+						<div class="form-group col-sm-12">
+							<input type="submit" value="Send" class="btn btn-lg btn-solid btn-block">
+						</div>
+					</form>
 			</div>
 		</div>
 	</div>
