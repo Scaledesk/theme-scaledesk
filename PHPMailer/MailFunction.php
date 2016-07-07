@@ -25,7 +25,7 @@ $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, 
 $mail->Port = 587;  
 $mail->IsHTML(true);  */
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'mail.scaledesk.com';  // Specify main and backup SMTP servers
+$mail->Host = 'sub5.mail.dreamhost.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'contact@scaledesk.com';                 // SMTP username
 $mail->Password = 'qazplmq1w2e3r4';                           // SMTP password
