@@ -48,15 +48,15 @@ $mail1->IsHTML(true);
 */
 
 $mail1->isSMTP();                                      // Set mailer to use SMTP
-$mail1->Host = 'email-smtp.us-west-2.amazonaws.com';  // Specify main and backup SMTP servers
+$mail1->Host = 'sub5.mail.dreamhost.com';  // Specify main and backup SMTP servers
 $mail1->SMTPAuth = true;                               // Enable SMTP authentication
-$mail1->Username = 'AKIAJHQ3XNEXXHP27ZSA';                 // SMTP username
-$mail1->Password = 'AoeE41tcpicmrBVhhdVtiA9pUIvKCD7rndYhnsUalQCj';                           // SMTP password
+$mail1->Username = 'contact@scaledesk.com';                 // SMTP username
+$mail1->Password = 'qazplmq1w2e3r4';                           // SMTP password
 $mail1->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail1->Port = 465;// TCP port to connect to
+$mail1->Port = 587;// TCP port to connect to
 $mail1->IsHTML(true);
 
-$mail1->setFrom('hi@imzolo.com', 'Scaledesk');
+$mail1->setFrom('contact@scaledesk.com', 'Scaledesk');
 
 
 //$mail->setFrom('contact@scaledesk.com', 'Scaledesk');
