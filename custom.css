@@ -15,3 +15,19 @@
     z-index: 50;
     background: white;
 }
+
+
+.static-header.clickthrough-version .overlay{
+
+	background:
+		-webkit-linear-gradient(45deg, hsla(0, 60%, 46%, 1) 0%, hsla(0, 60%,  46%, 0) 70%),
+		-webkit-linear-gradient(315deg, hsla(175, 55%, 39%, 1) 10%, hsla(175, 55%, 39%, 0) 80%),
+		-webkit-linear-gradient(225deg, hsla(182, 49%, 48%, 1) 10%, hsla(182, 49%, 48%, 0) 80%),
+		-webkit-linear-gradient(135deg, hsla(37, 55%, 50%, 1) 100%, hsla(37, 55%, 50%, 0) 70%);
+	background:
+		linear-gradient(45deg, hsla(0, 60%, 46%, 1) 0%, hsla(0, 60%, 46%, 0) 70%),
+		linear-gradient(135deg, hsla(175, 55%, 39%, 1) 10%, hsla(175, 55%, 39%, 0) 80%),
+		linear-gradient(225deg, hsla(182, 49%, 48%, 1) 10%, hsla(182, 49%, 48%, 0) 80%),
+		linear-gradient(315deg, hsla(37, 55%, 50%, 1) 100%, hsla(37, 55%, 50%, 0) 70%);
+	
+}
