@@ -52,7 +52,7 @@ $mail1->Host = 'sub5.mail.dreamhost.com';  // Specify main and backup SMTP serve
 $mail1->SMTPAuth = true;                               // Enable SMTP authentication
 $mail1->Username = 'contact@scaledesk.com';                 // SMTP username
 $mail1->Password = 'qazplmq1w2e3r4';                           // SMTP password
-$mail1->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+//$mail1->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail1->Port = 587;// TCP port to connect to
 $mail1->IsHTML(true);
 
