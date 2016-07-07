@@ -29,8 +29,8 @@ $mail->Host = 'mail.scaledesk.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'contact@scaledesk.com';                 // SMTP username
 $mail->Password = 'qazplmq1w2e3r4';                           // SMTP password
-$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465;// TCP port to connect to
+//$mail->SMTPSecure = '';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 587;// TCP port to connect to
 $mail->IsHTML(true);
 
 $mail->setFrom('contact@scaledesk.com', 'Scaledesk');
