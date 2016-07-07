@@ -403,10 +403,11 @@
 			</article>
 		</div>
 		<div class="col-sm-12 col-lg-7 animated" data-animation="fadeInRight" data-duration="500">
-			<form class="form mailchimp-form subscribe-form" style="padding-top: 10px;" action="PHPMailer/MailContactNumber.php" method="post">
+		<form class="form subscribe-form" method="post" action="POST">
+			<!-- <form class="form mailchimp-form subscribe-form" style="padding-top: 10px;" action="PHPMailer/MailContactNumber.php" method="post"> -->
 				<div class="form-group form-inline">
 
-					<input size="25" type="number" class="form-control required" name="NUMBER" placeholder="Phone Number" />
+					<input id= "phone"size="25" type="number" class="form-control required" name="phone" placeholder="Phone Number" />
 					<input type="submit" class="btn btn-outline" value="Schedule a Callback" />
 					<span class="response"></span>
 				</div>
