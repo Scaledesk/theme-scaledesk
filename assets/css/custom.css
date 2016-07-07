@@ -157,3 +157,13 @@ input[type=number]::-webkit-outer-spin-button {
 		linear-gradient(315deg, hsla(310, 47%, 7%, 0.5) 100%, hsla(310, 47%, 7%, 0) 70%);
 	
 }
+
+
+/*
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+*/
+

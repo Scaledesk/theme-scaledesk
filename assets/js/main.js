@@ -18,6 +18,8 @@ jQuery(document).ready(function($) {
 		//evaluate the $(window).scrollTop value and change the body::after and body::before background accordingly (using the new-color-n classes)
 		bodyBackground(topValueFillingBlocks);
 	});
+
+    
 });
 
 function updateOnFocusItem(items) {

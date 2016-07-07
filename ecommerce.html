@@ -680,6 +680,17 @@ if(isset($_POST['submit'])){
 			// this is important for IEs
 			var polyfilter_scriptpath = '/js/';
 		</script>
+        
+        <!--    Scroll disable on Input type number-->
+    
+    <script>
+        
+    $(function(){
+  $(':input[type=number]').on('mousewheel',function(e){ $(this).blur(); });
+});
+    </script>
+        
+        
 <!--
 		<script src="assets/js/cssParser.js"></script>
 		<script src="assets/js/css-filters-polyfill.js"></script>

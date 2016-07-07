@@ -3,9 +3,12 @@
     width: 770px;
     padding-top: 40px;
 }
+
+/*
 .s-nav{
     text-transform: capitalize !important;
 }
+*/
 
 .form.form-light{
     background: rgba(255, 255, 255, 0.83);
@@ -29,5 +32,11 @@
 		linear-gradient(135deg, hsla(175, 55%, 39%, 1) 10%, hsla(175, 55%, 39%, 0) 80%),
 		linear-gradient(225deg, hsla(182, 49%, 48%, 1) 10%, hsla(182, 49%, 48%, 0) 80%),
 		linear-gradient(315deg, hsla(37, 55%, 50%, 1) 100%, hsla(37, 55%, 50%, 0) 70%);
+    
+    background:
+		linear-gradient(45deg, hsla(122, 51%, 32%, 1) 0%, hsla(122, 51%, 32%, 0) 70%),
+		linear-gradient(135deg, hsla(192, 54%, 48%, 1) 10%, hsla(192, 54%, 48%, 0) 80%),
+		linear-gradient(225deg, hsla(177, 52%, 41%, 1) 10%, hsla(177, 52%, 41%, 0) 80%),
+		linear-gradient(315deg, hsla(335, 47%, 29%, 1) 100%, hsla(335, 47%, 29%, 0) 70%);
 	
 }
