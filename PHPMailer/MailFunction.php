@@ -8,11 +8,13 @@ $email=$_POST['email'];
 $phone=$_POST['phone'];
 $name=$_POST['first_name'];
 $emailadmin="sanchit2411@gmail.com";
+$namefrom=$_POST['pagefrom'];
+
 $subject = "GET IN TOUCH.";
 $messageUsers=file_get_contents('template.html');
 $message ='<html>
 <body>
-<div id="abcd" style="text-align:justify;font-size:18px;"> Name:-'.$name.'<br> Email:-'.$email.'<br>Phone:-'.$phone.'</div>
+<div id="abcd" style="text-align:justify;font-size:18px;"> Name:-'.$name.'<br> Email:-'.$email.'<br>Phone:-'.$phone.'<br>From:-'.$namefrom.'</div>
 </body>
 </html>';
 
