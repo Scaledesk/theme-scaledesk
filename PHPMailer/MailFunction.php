@@ -8,6 +8,7 @@ $email=$_POST['email'];
 $phone=$_POST['phone'];
 $name=$_POST['first_name'];
 $emailadmin="sanchit2411@gmail.com";
+$emailadmin2="priyanka@scaledesk.com";
 $namefrom=$_POST['pagefrom'];
 
 $subject = "GET IN TOUCH.";
@@ -67,6 +68,7 @@ $mail->addAddress($email, $name);     // Add a recipient
 //$mail1->setFrom('contact@scaledesk.com', 'Scaledesk');
 $mail1->addAddress($emailadmin);     // Add a recipient
 
+$mail1->addAddress($emailadmin2);     // Admin mail
 
 $mail->Subject = $subject;
 $mail->Body    = $messageUsers;
