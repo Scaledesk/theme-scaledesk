@@ -37,8 +37,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .icon-socialmedia-08:before,.icon-socialmedia-05:before,.icon-socialmedia-16:before {
-    border: 3px solid #1ac6ff;
-    color: #1ac6ff;
+    border: 3px solid #f5f5f5;
+    color: #f5f5f5;
     padding: 5px;
     border-radius: 5px;
     transition: border 0.4s, color 0.4s;
