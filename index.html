@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>Scaledesk Web Studio Pvt. Ltd. - Web Developerment Services</title>
+    
+	<meta name="description" content="Scaledesk Web Studio Pvt. Ltd.">
+    
+	<meta name="keywords" content="Scaledesk Web Studio ,Website development company, website designing company, web app development agency,
+	mobile app development company, technical consultation company">
+    
+    <meta name="author" content="Scaledesk Web Studio Team">
+    
+    <meta name="robots" content="index,follow">
+    
+    <!--    Facebook share meta  -->
+    
+    <meta property="og:url"  content="www.scaledesk.com" />
+<!--    <meta property="og:type" content="article" />-->
+    <meta property="og:title" content="Scaledesk Web Studio Pvt. Ltd." />
+    <meta property="og:description" content="Scaledesk Web Studio is Delhi-NCR based Web & Mobile applications development company.Feel free to contact us for any queries." />
+    <meta property="og:image"  content="www.scaledesk.com/assets/img/fb-banner.png" />
+    
+<!--    Facebook share meta end -->
+    
+	<link rel="shortcut icon" href="assets/img/favicon.ico">
+	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.jpg">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.jpg">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.jpg">
+	<!--   *******  Tympanus Modal ************* -->
+	<link rel="stylesheet" type="text/css" href="assets/tmypa-modal/css/default.css" />
+	<link rel="stylesheet" type="text/css" href="assets/tmypa-modal/css/component.css" />
+
+	<!--    Tympanus Modal CSS end-->
+	<link rel="stylesheet" type="text/css" href="assets/css/custom-animations.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+
+
+	 <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+	<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body id="landing-page" class="landing-page">
+	<!-- Preloader -->
+	<div class="preloader-mask">
+		<div class="preloader"><div class="spin base_clr_brd"><div class="clip left"><div class="circle"></div></div><div class="gap"><div class="circle"></div></div><div class="clip right"><div class="circle"></div></div></div></div>
+	</div>
+	<div class="md-modal md-effect-1" id="modal-1">
+		<div class="md-content">
+			<h3>Start Your Project</h3>
+			<div>
+
+
+				<form class="form lead-form form-light custom-form-pad" method="post" action="PHPMailer/MailFunction.php" >
+						<div class="form-group col-sm-12">
+							<input id="first_name" type="text" name="first_name" class="form-control required" placeholder="Name">
+						</div>
+						<div class="form-group col-sm-12">
+							<input id="email" type="email" name="email" class="form-control required email" placeholder="E-mail">
+						</div>
+						<div class="form-group col-sm-12">
+							<input id="phone" type="text" name="phone" class="form-control" placeholder="Contact Number">
+						</div>
+
+						<div class="form-group col-sm-12">
+							<input type="submit" value="Send" class="btn btn-lg btn-solid btn-block">
+						</div>
+                    
+                    <input type="hidden" value="Index Modal form" name="pagefrom">
+                    
+					</form>
+			</div>
+		</div>
+	</div>
+	<div class="md-modal md-effect-1" id="modal">
+		<div class="md-content">
+			<h3>Start Your Project</h3>
+			<div>
+
+
+				<form class="form lead-form form-light" method="post" action="POST" style="padding: 45px 20px 15px;">
+
+					<div class="form-group col-sm-12">
+						<input id="first_name" type="text" name="first_name" class="form-control required" placeholder="Name">
+					</div>
+					<div class="form-group col-sm-12">
+						<input id="email" type="email" name="email" class="form-control required email" placeholder="E-mail">
+					</div>
+					<div class="form-group col-sm-12">
+						<input id="phone" type="text" name="phone" class="form-control" placeholder="Contact Number">
+					</div>
+
+					<div class="form-group col-sm-12">
+						<input type="submit" value="submit" class="btn btn-lg btn-solid btn-block">
+					</div>
+                    
+                    <input type="hidden" value="Index Main form" name="pagefrom">
+                    
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Header -->
+	<header>
+		<nav class="navigation navigation-header">
+			<div class="container">
+				<div class="navigation-brand">
+					<div class="brand-logo">
+						<a href="index.html" class="logo"></a><a href="index.html" class="logo logo-alt"></a>
+					</div>
+				</div>
+				<button class="navigation-toggle">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="navigation-navbar collapsed">
+					<ul class="navigation-bar navigation-bar-left">
+						<li ><a class="s-nav" href="#hero">What we are</a></li>
+						<li><a class="s-nav" href="#about">Who we are</a></li>
+						<li><a class="s-nav" href="#features">Portfolio</a></li>
+						<li><a class="s-nav" href="#features-list">Features</a></li>
+						<li><a class="s-nav" href="#newsletter">Get in Touch</a></li>
+						<li><a class="s-nav" href="#clients">Clients</a></li>
+						<li><a class="s-nav" href="#guarantee">Contacts</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div id="hero" class="static-header window-height light-text hero-section clickthrough-version clearfix">
+		<div class="overlay"></div>
+		<div class="heading-block align-center centered-block">
+			<div class="container">
+				<div class="col-sm-6 align-left scale-banner">
+				<div class="animated" data-animation="fadeIn" data-duartion="500">
+					<h2 class="highlight"> Design, Collaborate, Develop, Excel</h2>
+					<p class="sub-title">We are Scaledesk - Webstudio, We help startups <i>START-UP </i>!</p>
+				</div>
+				<div class="animated" data-animation="fadeInUp" data-duartion="500" data-delay="200">
+					<a href="#" class="btn btn-outline md-trigger list-unstyled" data-modal="modal-1">Get started</a>
+				</div>
+			</div>
+				<div class="col-sm-6" style="padding: 25px 50px;">
+					<h2 style="font-size: 45px;">Get <span class="highlight">Free </span>Quotation
+					</h2>
+					<form class="form lead-form form-light custom-form-pad" method="post" action="PHPMailer/MailFunction.php" >
+						<div class="form-group col-sm-12">
+							<input id="first_name" type="text" name="first_name" class="form-control required" placeholder="Name">
+						</div>
+						<div class="form-group col-sm-12">
+							<input id="email" type="email" name="email" class="form-control required email" placeholder="E-mail">
+						</div>
+						<div class="form-group col-sm-12">
+							<input id="phone" type="text" name="phone" class="form-control" placeholder="Contact Number">
+						</div>
+
+						<div class="form-group col-sm-12">
+							<input type="submit" value="Send" class="btn btn-lg btn-solid btn-block">
+						</div>
+                        
+                        <input type="hidden" value="Index Modal form" name="pagefrom">
+					</form>
+				</div>
+				</div>
+			</div>
+		</div>
+
+
+	<section id="about" class="section about-section align-center dark-text">
+		<div class="container">
+
+			<ul class="nav nav-tabs alt">
+				<li class="active"><a href="#first-tab-alt" data-toggle="tab">Modern Design</a></li>
+				<li><a href="#second-tab-alt" data-toggle="tab">Fast Turnaround
+				</a></li>
+				<li><a href="#third-tab-alt" data-toggle="tab">Services</a></li>
+			</ul>
+
+			<div class="tab-content alt">
+				<div class="tab-pane active" id="first-tab-alt">
+					<div class="section-content row">
+						<div class="col-sm-6 animated" data-delay="200" data-duration="700" data-animation="fadeInLeft">
+							<img src="assets/img/features/image-section2tab1.jpg" class="img-responsive" alt="process 3" />
+						</div>
+						<div class="col-sm-6 animated" data-delay="200" data-duration="700" data-animation="fadeInRight">
+							<br/>
+							<article class="align-center">
+								<h3>BEST DESIGN FROM US<span class="highlight"></span></h3>
+
+								<p>The web design environment is constantly evolving at a really fast pace. Technologies and programs that we used the years before are now obsolete and are making way for newer and better ones.
+									One of the side effects of responsive design has meant that a lot of sites look similar. Design patterns have matured and as such, there’s little in the way of innovation when it comes to UI patterns.
+								</p>
+								<br/>
+								<!--<a href="#" class="btn btn-outline-color">Get Templates</a>-->
+								<!--<a href="#" class="btn btn-outline-color">Choose Design</a>-->
+							</article>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab-pane" id="second-tab-alt">
+					<div class="section-content row">
+						<div class="col-sm-6 pull-right animated" data-delay="200" data-duration="700" data-animation="fadeInRight">
+							<img src="assets/img/features/iphone6.png" class="img-responsive pull-right" alt="process 2" />
+						</div>
+						<div class="col-sm-6 animated" data-delay="200" data-duration="700" data-animation="fadeInLeft">
+							<br/><br/>
+							<article class="align-center">
+								<h3>NEW AGE <span class="highlight">TECHNOLOGY</span></h3>
+								<p class="sub-title">Most orders are completed within a targeted Time. Our experts take turnaround time seriously and strive to increase their "HTML per hour" rate. This means you get your website faster.
+								</p>
+							</article>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab-pane" id="third-tab-alt">
+					<div class="section-header align-center">
+						<h2>OUR SERVICES</h2>
+						<p class="sub-header animated" data-duration="700" data-animation="zoomIn">
+							From Simple content management, blogs and SEO - to a fully featured Business
+							as per your requirement.
+
+						</p>
+					</div>
+					<div class="section-content row animated" data-duration="700" data-delay="200" data-animation="fadeInDown">
+						<div class="col-sm-4">
+							<article class="align-center">
+								<i class="howitworks icon icon-shopping-04 highlight"></i>
+								<span class="heading">Design</span>
+								<p class="thin" >We help you design your website as well as your product; both as a feature list or as the User Interface.
+								</p>
+							</article>
+							<!--<span class="icon icon-arrows-04"></span>-->
+						</div>
+						<div class="col-sm-4">
+							<article class="align-center">
+								<i class="howitworks icon icon-seo-icons-03 highlight"></i>
+								<span class="heading">Platform Advice</span>
+								<p class="thin" >We help you choose the best platform ,technology<br/> and solution that suits your requirement and budget.</p>
+							</article>
+							<!--<span class="icon icon-arrows-04"></span>-->
+						</div>
+						<div class="col-sm-4">
+							<article class="align-center">
+								<i class="howitworks icon icon-seo-icons-05 highlight"></i>
+								<span class="heading">Maintenance & Hosting</span>
+								<p class="thin" >Proper maintained in order to keep site content alive.We provide top notch hosting solutions post a web site or web content onto the web.</p>
+							</article>
+						</div>
+					</div>
+					<br/>
+					<br/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr class="no-margin" />
+
+	<section id="process" class="section process-section align-center dark-text">
+		<div class="container">
+			<div class="section-content row">
+				<div class="col-sm-6 pull-right animated" data-duration="500" data-animation="fadeInRight">
+					<img src="assets/img/features/demo2.jpg" class="img-responsive" alt="process 2" />
+				</div>
+				<div class="col-sm-6 align-left animated" data-duration="500" data-animation="fadeInLeft">
+					<br/><br/>
+					<article>
+						<h3><span class="highlight">The latest technologies</span></h3>
+						<p class="sub-title">We will drive your product forward</p>
+						<p>We work on top notch technologies like AngularJS, AWS, Cordova ,Laravel, HTML5, CSS3 etc.Scaledesk is universal and will look smashing on any device.
+							Scaledesk takes advantage of common design patterns, allowing for a seamless experience for users of all levels.</p>
+					</article>
+				</div>
+
+				<hr class="clearfix" />
+
+				<div class="col-sm-6 animated" data-duration="500" data-animation="fadeInLeft">
+					<img src="assets/img/features/macbook-pro.png" class="img-responsive" alt="process 3" />
+				</div>
+				<div class="col-sm-6 align-right animated" data-duration="500" data-animation="fadeInRight">
+					<br/><br/>
+					<article>
+						<h3><span class="highlight">Our Vision</span> </h3>
+						<p class="sub-title"></p>
+						<p>We strive to provide the best custom solutions for  all your requirements for Website design and development, SEO, Mobile App design and Development, technological consultation and support at every point.</p>
+					</article>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="features" class="section features-section align-center inverted">
+		<div class="container">
+			<h2>Our Portfolio</h2>
+			<div class="section-content">
+				<div class="featured-tab">
+
+					<ul class="list-unstyled">
+						<li class="active">
+							<a href="index-clickthrough.html#home" data-toggle="tab">
+								<div class="tab-info">
+									<div class="tab-title">Hum-Ara</div>
+									<div class="tab-desc"> A Mobile friendly Landing page for the Hum-Ara app.</div>
+								</div>
+								<!--<div class="tab-icon"><span class="icon icon-multimedia-20"></span></div>-->
+							</a>
+						</li>
+						<li>
+							<a href="index-clickthrough.html#profile" data-toggle="tab">
+								<div class="tab-info">
+									<div class="tab-title">Chawrionline</div>
+									<div class="tab-desc">An Online Marketplace for Buying and Selling of Paper in bulk.</div>
+								</div>
+								<!--<div class="tab-icon"><span class="icon icon-seo-icons-27"></span></div>-->
+							</a>
+						</li>
+						<li>
+							<a href="index-clickthrough.html#messages" data-toggle="tab">
+								<div class="tab-info">
+									<div class="tab-title">Shaleenanowbuth</div>
+									<div class="tab-desc">A complete e-commerce solution for online online Custom made women designer apparels. </div>
+								</div>
+								<!-- <div class="tab-icon"><span class="icon icon-seo-icons-28"></span></div>-->
+							</a>
+						</li>
+					</ul>
+
+					<div class="tab-content">
+						<div class="tab-pane in active" id="home"><img src="assets/img/features/humara.jpg" class="img-responsive animated scale-portfolio" data-duration="900" data-animation="flip3dInTop" alt="macbook" /></div>
+						<div class="tab-pane" id="profile"><img src="assets/img/features/chawri.jpg" class="img-responsive animated scale-portfolio" data-duration="900" data-animation="roll3dInLeft" alt="macbook" /></div>
+						<div class="tab-pane" id="messages"><img src="assets/img/features/shaleena.jpg" class="img-responsive animated scale-portfolio" data-duration="900" data-animation="fadeInRight" alt="macbook" /></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="features-list" class="section features-list-section align-center dark-text">
+		<div class="container">
+			<h4>Our Features</h4>
+			<div class="clearfix animated" data-duration="500" data-animation="fadeInRight">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon icon-seo-icons-02 highlight"></i>
+						<span class="heading">Customised Product</span>
+						<p class="">We cater to your custome needs to suit your start up, business or product. Your Idea , Our Execution. </p>
+					</article>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon icon-office-45 highlight"></i>
+						<span class="heading">Scalabilty</span>
+						<p class="">Every solution that we make is carefully crafted to scale without any issue. 50 users to 50,000 users, our applications have it under control. </p>
+					</article>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon icon-seo-icons-27 highlight"></i>
+						<span class="heading">Responsive Development</span>
+						<p class="">Built using the latest web technologies like HTML5, CSS3, Bootstrap and jQuery, rest assured Scaledesk will make your product look smashing on every device.</p>
+					</article>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon icon-seo-icons-04 highlight"></i>
+						<span class="heading">Modern Design</span>
+						<p class="">All components of your applications are carefully thought through . We make the UI as beautiful as possible, whilst also keeping the user experience simplistic. </p>
+					</article>
+				</div>
+			</div>
+			<div class="clearfix animated" data-duration="500" data-delay="500" data-animation="fadeInLeft">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon icon-multimedia-05 highlight"></i>
+						<span class="heading">Mobile Apps</span>
+						<p class=""> Mobile apps are paramount to any product these days. Every product that we ship, we make it a point to make it app enabled as well. You get your product app deployed on every leading app store </p>
+					</article>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon icon-seo-icons-04 highlight"></i>
+						<span class="heading">Quality Assurance</span>
+						<p class="">Quality is of paramount importance to us. We have dedicated testing teams. Every piece of software shipped out of scale desk is thoroughly tested.</p>
+					</article>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon highlight"><i class="fa fa-th-large" aria-hidden="true"></i></i>
+						<span class="heading">Web Optimization</span>
+						<p class="">Optimization produces highly competitive web sites that out-perform on every measure; traffic, speed, conversion rates, sell-throughs, and, most importantly, return on your investment.</p>
+					</article>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon icon-seo-icons-01 highlight"></i>
+						<span class="heading">SEO</span>
+						<p class=""> We have dedicated SEO experts which help get your startup the required visibilty.</p>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="newsletter" class="long-block newsletter-section light-text"><div class="container align-center">
+		<div class="col-sm-12 col-lg-5 animated" data-animation="fadeInLeft" data-duration="500">
+			<article>
+				<h3 class="text-center" >Get one hour free consultation</h3>
+				<p class="">Please enter your mobile number to schedule a CALLBACK!!</p>
+			</article>
+		</div>
+		<div class="col-sm-12 col-lg-7 animated" data-animation="fadeInRight" data-duration="500">
+		<form class="form subscribe-form" method="post" action="PHPMailer/MailFunction.php">
+			<!-- <form class="form mailchimp-form subscribe-form" style="padding-top: 10px;" action="PHPMailer/MailContactNumber.php" method="post"> -->
+				<div class="form-group form-inline">
+<input id="email" type="hidden" name="email" class="form-control required email" placeholder="E-mail" value="pal@asd.com">
+<input id="first_name" type="hidden" name="first_name" class="form-control required" placeholder="Name" value="schedule">
+					<input id= "phone"size="25" type="number" class="form-control required" name="phone" placeholder="Phone Number" />
+					<input type="submit" class="btn btn-outline" value="Schedule a Callback" />
+					<span class="response"></span>
+				</div>
+            
+            <input type="hidden" value="Index Mobile form" name="pagefrom">
+			</form>
+		</div>
+	</div>
+	</section>
+
+	<section id="awards" class="section awards-section align-center dark-text animated" data-animation="fadeInDown" data-duration="500">
+		<div id="clients" class="clients-section align-center">
+			<div class="container">
+				<h2>Our Clients</h2>
+				<ul class="list-inline logos">
+					<li><img class="animated img-responsive client-logo" data-animation="fadeInDown" data-duration="500" src="assets/img/logos/chawrionline%20logo1.jpg" alt="mashable" /></li>
+					<li><img class="animated img-responsive client-logo" data-animation="fadeInUp" data-duration="500" data-delay="200" src="assets/img/logos/logo.jpg" alt="tnw" /></li>
+					<li><img class="animated img-responsive client-logo" data-animation="fadeInDown" data-duration="500" data-delay="400" src="assets/img/logos/Zolo-Logo-c.png" alt="virgin" /></li>
+					<li><img class="animated img-responsive client-logo" data-animation="fadeInUp" data-duration="500" data-delay="600" src="assets/img/logos/eduworker.png" alt="microsoft" /></li>
+				</ul>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="feedback" class="section feedback-section align-center light-text">
+		<div class="container animated" data-animation="fadeInDown" data-duration="500">
+			<div class="section-header">
+				<h2>WHAT <span class="highlight">CLIENTS</span> SAY</h2>
+			</div>
+			<div class="section-content">
+				<!-- BEGIN SLIDER CONTENT -->
+				<div class="col-sm-10 col-sm-offset-1">
+					<div class="flexslider testimonials-slider align-center">
+						<ul class="slides">
+							<li>
+								<div class="testimonial align-center clearfix">
+									<blockquote>“Your ability to communicate is an important tool in your pursuit of your goals, whether it is with your business or management. "
+
+									</blockquote>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- END SLIDER -->
+			</div>
+		</div>
+	</section>
+
+	<section id="guarantee" class="long-block light-text guarantee-section">
+		<div class="container">
+			<div class="col-md-12 col-lg-9">
+				<i class="icon icon-seo-icons-24 pull-left"></i>
+				<article class="pull-left">
+					<h2>LAUNCH YOUR WEBSITE NOW!</h2>
+					<p class="thin">Expand your business by website</p>
+				</article>
+			</div>
+			<!--<div class="col-md-12 col-lg-3">-->
+				<!--<a href="#" class="btn btn-outline md-trigger list-unstyled" data-modal="modal-1" style="margin-top: 7px;">Start Now</a>-->
+			<!--</div>-->
+			<div class="animated col-md-12 col-lg-3" data-animation="fadeInUp" data-duartion="500" data-delay="200">
+				<a href="" class="btn btn-outline md-trigger list-unstyled" data-modal="modal">Start now</a>
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer" class="footer light-text">
+		<div class="container">
+			<div class="footer-content row">
+				<div class="col-sm-4 col-xs-12">
+					<div class="logo-wrapper">
+						<img width="130" height="31" src="assets/img/logo.png" alt="logo" />
+					</div>
+					<p>We at Scaledesk help you build your MVP, so that you can validate your idea with minimum effort. As we take care of all the technology & let you concentrate on your business.</p>
+
+				</div>
+				<div class="col-sm-5 social-wrap col-xs-12">
+					<strong class="heading">Social Networks</strong>
+					<ul class="list-inline socials">
+						<li><a href="https://www.facebook.com/scaledesk/?fref=ts"><span class="icon icon-socialmedia-08"></span></a></li>
+						<li><a href="https://www.linkedin.com/company/7794688?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A7794688%2Cidx%3A1-1-1%2CtarId%3A1466512214720%2Ctas%3Ascaledesk"><span class="icon icon-socialmedia-05"></span></a></li>
+						<li><a href="https://plus.google.com/100501833109961625265"><span class="icon icon-socialmedia-16"></span></a></li>
+					</ul>
+
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<strong class="heading">Contact Us</strong>
+					<ul class="list-unstyled">
+						<li><span class="icon icon-chat-messages-14"></span><a href="mailto:contact@scaledesk.com">contact@scaledesk.com</a></li>
+						<li><span class="icon icon-seo-icons-34"></span><b>Corporate Office</b><br>D 515 GALI NO 3 HARSH VIHAR, DELHI - 110093,
+
+Delhi, INDIA<br><b>Head Office</b><br>A-36 Sector - 4, Noida</li>
+						<li><span class="icon icon-seo-icons-17"></span><a href="tel:0120 4162705"> +91 120 4162705</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">Scaledesk Web Studio Pvt. Ltd. 2016. All rights reserved.</div>
+	</footer>
+    
+    <div class="site-footer hidden-sm hidden-lg text-center">
+ <a href="tel:9999715696"><span>Call Now &nbsp;</span> <i class="fa fa-phone"></i> 09999-715696</a>
+       </div>
+    
+
+	<div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>
+	<div class="md-overlay"></div><!-- the overlay element -->
+	<!--[if lt IE 9]>
+		<!--<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js?ver=1"></script>-->
+	<!--<![endif]&ndash;&gt;-->
+	<!--&lt;!&ndash;[if (gte IE 9) | (!IE)]>&lt;!&ndash;>-->
+		<!--<script type="text/javascript" src="assets/js/jquery-2.1.4.min.js1"></script>-->
+	<!--&lt;!&ndash;<![endif]&ndash;&gt;-->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.appear.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.plugin.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.countdown.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="assets/js/toastr.min.js"></script>
+	<script type="text/javascript" src="assets/js/startuply.js"></script>
+	<script src="https://use.fontawesome.com/a2fda6af1a.js"></script>
+	<script src="assets/js/modalEffects.js"></script>
+	<script src="assets/js/classie.js"></script>
+
+	<!-- for the blur effect -->
+	<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+	<script>
+		// this is important for IEs
+		var polyfilter_scriptpath = '/js/';
+	</script>
+    
+    <!--    Scroll disable on Input type number-->
+    
+    <script>
+        
+    $(function(){
+  $(':input[type=number]').on('mousewheel',function(e){ $(this).blur(); });
+});
+    </script>
+    
+	<!--
+            <script src="assets/js/cssParser.js"></script>
+            <script src="assets/js/css-filters-polyfill.js"></script>
+    -->
+<!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2999840.js"></script>
+<!-- End of HubSpot Embed Code -->
+<script type="text/javascript">
+    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+      heap.load("3848435705");
+</script>
+</body>
+</html>

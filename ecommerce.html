@@ -1,0 +1,712 @@
+<?php
+if(isset($_POST['submit'])){
+    $to = "sudo@scaledesk.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['phone'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>Scaledesk Web Stduio - Wordpress Landing Page</title>
+	<meta name="description" content="We at Scaledesk help you build your e-commerce solution, so that you can validate your idea with minimum effort. As we take care of all the technology & let you concentrate on your business.">
+
+	<meta name="keywords" content="Scaledesk Web Studio, Wordpress website development company, e-commerce website development company, Wordpress Web design company, custom web design services, mobile website design services, Website redesign services, affordable website design service ,professional web design cpompany, e-commerce web design Noida,Website Design packages, Wordpress E-commerce website development, Blog Development company, ecommerce mobile app development company">
+
+    <meta name="author" content="Scaledesk Web Studio Team">
+    
+    <meta name="robots" content="index,follow">
+
+    <!--    Browser specific styling-->
+
+    <!-- Chrome, Firefox OS and Opera -->
+
+    <meta name="theme-color" content="#1ac6ff">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#1ac6ff">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!--    Browser specific styling in Using Meta END-->
+
+	<link rel="shortcut icon" href="assets/img/favicon.ico">
+	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.jpg">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.jpg">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.jpg">
+
+<!--   *******  Tympanus Modal ************* -->
+    <link rel="stylesheet" type="text/css" href="assets/tmypa-modal/css/default.css" />
+		<link rel="stylesheet" type="text/css" href="assets/tmypa-modal/css/component.css" />
+
+<!--    Tympanus Modal CSS end-->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/custom-animations.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/component.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/custom-animations.css" />
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body id="landing-page" class="landing-page">
+	<!-- Preloader -->
+	<div class="preloader-mask">
+		<div class="preloader"><div class="spin base_clr_brd"><div class="clip left"><div class="circle"></div></div><div class="gap"><div class="circle"></div></div><div class="clip right"><div class="circle"></div></div></div></div>
+	</div>
+		<div class="md-modal md-effect-1" id="modal-1">
+			<div class="md-content">
+				<h3>Start Your Project</h3>
+				<div>
+
+
+					<form class="form lead-form form-light custom-form-pad" method="post" action="PHPMailer/MailFunction.php" >
+						<div class="form-group col-sm-12">
+							<input id="first_name" type="text" name="first_name" class="form-control required" placeholder="Name">
+						</div>
+						<div class="form-group col-sm-12">
+							<input id="email" type="email" name="email" class="form-control required email" placeholder="E-mail">
+						</div>
+						<div class="form-group col-sm-12">
+							<input id="phone" type="text" name="phone" class="form-control" placeholder="Contact Number">
+						</div>
+
+						<div class="form-group col-sm-12">
+							<input type="submit" value="Send" class="btn btn-lg btn-solid btn-block">
+						</div>
+                        
+                        <input type="hidden" value="ecommerce modal form" name="pagefrom">
+                               
+					</form>
+				</div>
+			</div>
+		</div>
+	<header>
+		<nav class="navigation navigation-header">
+			<div class="container">
+				<div class="navigation-brand">
+					<div class="brand-logo">
+						<a href="#hero" class="logo"></a><a href="#hero" class="logo logo-alt"></a>
+					</div>
+				</div>
+				<button class="navigation-toggle">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="navigation-navbar collapsed">
+					<ul class="navigation-bar navigation-bar-left">
+						<li><a href="#hero">Home</a></li>
+						<li><a href="#features-list">Features</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#product">Prices</a></li>
+						<li><a href="#newsletter">Feedback</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#guarantee">Contacts</a></li>
+
+					</ul>
+					<ul class="navigation-bar navigation-bar-right">
+					<!-- <button class="md-trigger" data-modal="modal-1">Fade in &amp; Scale</button> -->
+
+						<li class="featured"><a class="btn btn-sm btn-outline-color" href="tel:+919599993689">+91-9599993689</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div id="hero" class="static-header window-height register-version hero-section light-text clearfix">
+
+		<div class="heading-block align-center centered-block">
+			<div class="container centered-block">
+
+				<div class="col-sm-6 align-left">
+					<h2 style="font-size: 45px;">“Call and get <span class="highlight">CMS </span>and 1 year of <span class="highlight">Dedicated Hosting</span> services for free !”
+                    </h2>
+					<p style="margin-bottom: 60px;">We are Scaledesk Web Studio and we aim to get your Website up and running perfectly. With top notch tecnologies and hosting solutions you can have an easy to manage and good Web Presence.</p>
+					<div>
+						<div class="col-sm-6">
+							<div style="margin-bottom: 50px;">
+								<article class="align-left icon-text icon-block-left">
+									<div class="icon-block-icon">
+										<i class="fa fa-file-text highlight"></i>
+									</div>
+									<div class="icon-block-text">
+										<span class="heading">Free Hosting</span>
+										<p class="thin">We provide over 1 year of dedicated hosting for your application</p>
+									</div>
+								</article>
+							</div>
+
+							<div>
+								<article class="align-left icon-text icon-block-left">
+									<div class="icon-block-icon">
+										<i class="fa fa-newspaper-o highlight"></i>
+									</div>
+									<div class="icon-block-text">
+										<span class="heading">Consultation</span>
+										<p class="thin">Setup a call with our experts to discuss your idea and tech required for it.  </p>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div style="margin-bottom: 50px;">
+								<article class="align-left icon-text icon-block-left">
+									<div class="icon-block-icon">
+										<i class="fa fa-cogs highlight"></i>
+									</div>
+									<div class="icon-block-text">
+										<span class="heading">Maintenance</span>
+										<p class="thin">Get 3 months of free application support from our deployment team. </p>
+									</div>
+								</article>
+							</div>
+							<div>
+								<article class="align-left icon-text icon-block-left">
+									<div class="icon-block-icon">
+										<i class="fa fa-diamond highlight"></i>
+									</div>
+									<div class="icon-block-text">
+										<span class="heading">Free Analytics</span>
+										<p class="thin">We help you setup analytics for your application</p>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6" style="padding: 25px 50px;">
+				<h2 style="font-size: 45px;">Get <span class="highlight">Free </span>Quotation
+                    </h2>
+					<form class="form lead-form form-light custom-form-pad" method="post" action="PHPMailer/MailFunction.php" >
+						<div class="form-group col-sm-12">
+							<input id="first_name" type="text" name="first_name" class="form-control required" placeholder="Name">
+						</div>
+                        <div class="form-group col-sm-12">
+							<input id="email" type="email" name="email" class="form-control required email" placeholder="E-mail">
+						</div>
+						<div class="form-group col-sm-12">
+							<input id="phone" type="text" name="phone" class="form-control" placeholder="Contact Number">
+						</div>
+
+						<div class="form-group col-sm-12">
+							<input type="submit" value="Send" class="btn btn-lg btn-solid btn-block">
+						</div>
+                        
+                        <input type="hidden" value="ecommerce Main form" name="pagefrom">
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</div>
+    <!--features section-->
+	<section id="features-list" class="section features-list-section align-center dark-text">
+		<div class="container">
+			<h4>Our Features</h4>
+			<div class="clearfix animated" data-duration="500" data-animation="fadeInRight">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon icon-seo-icons-02 highlight"></i>
+						<span class="heading">Customised Product</span>
+						<p class="">We cater to your custome needs to suit your start up, business or product. Your Idea , Our Execution. </p>
+					</article>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon icon-office-45 highlight"></i>
+						<span class="heading">Scalabilty</span>
+						<p class="">Every solution that we make is carefully crafted to scale without any issue. 50 users to 50,000 users, our applications have it under control. </p>
+					</article>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon icon-seo-icons-27 highlight"></i>
+						<span class="heading">Responsive Development</span>
+						<p class="">Built using the latest web technologies like HTML5, CSS3, Bootstrap and jQuery, rest assured Scaledesk will make your product look smashing on every device.</p>
+					</article>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon icon-seo-icons-04 highlight"></i>
+						<span class="heading">Modern Design</span>
+						<p class="">All components of your applications are carefully thought through . We make the UI as beautiful as possible, whilst also keeping the user experience simplistic. </p>
+					</article>
+				</div>
+			</div>
+			<div class="clearfix animated" data-duration="500" data-delay="500" data-animation="fadeInLeft">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon icon-multimedia-05 highlight"></i>
+						<span class="heading">Mobile Apps</span>
+						<p class=""> Mobile apps are paramount to any product these days. Every product that we ship, we make it a point to make it app enabled as well. You get your product app deployed on every leading app store </p>
+					</article>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon icon-seo-icons-04 highlight"></i>
+						<span class="heading">Quality Assurance</span>
+						<p class="">Quality is of paramount importance to us. We have dedicated testing teams. Every piece of software shipped out of scale desk is thoroughly tested.</p>
+					</article>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon highlight"><i class="fa fa-th-large" aria-hidden="true"></i></i>
+						<span class="heading">Web Optimization</span>
+						<p class="">Optimization produces highly competitive web sites that out-perform on every measure; traffic, speed, conversion rates, sell-throughs, and, most importantly, return on your investment.</p>
+					</article>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon icon-seo-icons-01 highlight"></i>
+						<span class="heading">SEO</span>
+						<p class=""> We have dedicated SEO experts which help get your startup the required visibilty.</p>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--services-->
+	<section id="services" class="section features-list-section align-center dark-text">
+		<div class="container">
+			<h4>Our Services</h4>
+			<div class="clearfix animated" data-duration="500" data-animation="fadeInRight">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center product-inner">
+						<i class="icon icon-chat-messages-07 highlight"></i>
+						<span class="heading">Techincal Consultance</span>
+						<p class=""> As technology experts we can help you decide and develop your technology.</p>
+					</article>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon icon-office-12 highlight"></i>
+						<span class="heading">Project Management</span>
+						<p class=""> We help you manage your project effectively, be it traditional or agile based methodologies. </p>
+					</article>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon icon-seo-icons-03 highlight"></i>
+						<span class="heading">Maintenance & Support</span>
+						<p class=""> We help maintain and support both small scale and enterprise level application, to ensure smooth operations. </p>
+					</article>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon  highlight"><i class="fa fa-laptop" aria-hidden="true"></i></i>
+						<span class="heading">Design</span>
+						<p class=""> We help you design your product both as a feature list or as the UI</p>
+					</article>
+				</div>
+			</div>
+			<div class="clearfix animated" data-duration="500" data-delay="500" data-animation="fadeInLeft">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon icon-seo-icons-04 highlight"></i>
+						<span class="heading">Quality Assurance</span>
+						<p class=""> We have dedicated projects only based on quality assurance work. We take an applicaton and thoroughly test it so that what you get is exactly what you asked for.</p>
+					</article>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon icon-faces-users-04 highlight"></i>
+						<span class="heading">Techincal Staffing</span>
+						<p class=""> We help you build and staff your in-house technical team.</p>
+					</article>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon icon-office-23 highlight"></i>
+						<span class="heading">Complete Installation & configuration</span>
+						<p class="">We make the proper setup for your project along with the required plugins you need.</p>
+					</article>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<article class="align-center">
+						<i class="icon icon-seo-icons-01 highlight"></i>
+						<span class="heading">SEO & SMO</span>
+						<p class="">Getting your web content free from traffic and making it visible on all search engines.</p>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--pricing table-->
+	<section id="product" class="section product-section align-center dark-text animated" data-animation="fadeInUp" data-duration="500">
+		<div class="container">
+			<div class="section-header">
+				<h2>PRODUCT <span class="highlight">PACKAGES</span></h2>
+				<p class="sub-header">
+                    From Simple content management, blogs and SEO - to a fully featured Business
+					<br />as per your requirements
+				</p>
+			</div>
+			<div class="section-content row">
+
+                <div class="col-sm-4">
+                    <div class="package-column">
+                        <div class="package-title">Standard</div>
+                        <div class="package-price">
+                            <div class="price"><span class="currency">&#8377;</span>15,000</div>
+                            <div class="period">Basic</div>
+                        </div>
+                        <div class="package-detail">
+                            <ul class="list-unstyled">
+                                <li>5 Dynamic Pages</li>
+                                <li>Free 1 yr Dedicated hosting</li>
+                                <li>Responsive Design</li>
+                                <li>3 Month Maintenace free</li>
+                                <li>Basic SE0</li>
+
+                            </ul>
+                            <li class="featured md-trigger list-unstyled" data-modal="modal-1"><a class="btn btn-sm btn-outline-color">Start Your Project</a></li>
+                        </div>
+                    </div>
+                </div>
+
+				<div class="col-sm-4">
+					<div class="package-column">
+						<div class="package-title">Premium</div>
+						<div class="package-price">
+							<div class="price"><span class="currency">&#8377;</span>25,000</div>
+							<div class="period">Standard + Premium</div>
+						</div>
+						<div class="package-detail">
+							<ul class="list-unstyled">
+								<li>8+ Dynamic Pages</li>
+								<li>Custom Design Templates</li>
+								<li>Mobile Friendly</li>
+								<li>Free CMS</li>
+                                <li>On page SEO</li>
+							</ul>
+							<li class="featured md-trigger list-unstyled" data-modal="modal-1"><a class="btn btn-sm btn-outline-color">Start Your Project</a></li>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="package-column">
+						<div class="package-title">Advanced</div>
+						<div class="package-price">
+							<div class="price"><span class="currency">&#8377;</span>50,000</div>
+							<div class="period">Premium + Advance</div>
+						</div>
+						<div class="package-detail">
+							<ul class="list-unstyled">
+								<li>25+ Dynamic pages</li>
+								<li>Fully customizable design</li>
+								<li>Payment Gateway Integraion</li>
+								<li>Google Analytics enabled</li>
+                                <li>Cross Browser Compatible</li>
+							</ul>
+							<li class="featured md-trigger list-unstyled" data-modal="modal-1"><a class="btn btn-sm btn-outline-color">Start Your Project</a></li>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section id="newsletter" class="long-block newsletter-section light-text"><div class="container align-center">
+		<div class="col-sm-12 col-lg-5 animated" data-animation="fadeInLeft" data-duration="500">
+			<article>
+				<h3 class="text-center" >Get one hour free consultation</h3>
+				<p class="">Please enter your mobile number to schedule a CALLBACK!!</p>
+			</article>
+		</div>
+		<div class="col-sm-12 col-lg-7 animated" data-animation="fadeInRight" data-duration="500">
+			<div class="col-sm-12 col-lg-12 animated" data-animation="fadeInRight" data-duration="500">
+		<form class="form subscribe-form" method="post" action="PHPMailer/MailFunction.php">
+			<!-- <form class="form mailchimp-form subscribe-form" style="padding-top: 10px;" action="PHPMailer/MailContactNumber.php" method="post"> -->
+				<div class="form-group form-inline">
+<input id="email" type="hidden" name="email" class="form-control required email" placeholder="E-mail" value="pal@asd.com">
+<input id="first_name" type="hidden" name="first_name" class="form-control required" placeholder="Name" value="schedule">
+					<input id= "phone"size="25" type="number" class="form-control required" name="phone" placeholder="Phone Number" />
+					<input type="submit" class="btn btn-outline" value="Schedule a Callback" />
+					<span class="response"></span>
+				</div>
+            
+            <input type="hidden" value="ecommerce Phone form" name="pagefrom">
+			</form>
+		</div>
+	</div>
+	</section>
+
+    <!--portfolio-->
+    <section id="portfolio" class="section">
+    <div class="container">
+        <h3 class="align-center">OUR PORTFOLIO</h3>
+    <div class="product-list row material-view">
+
+    <div class="clearfix">
+        <div class="product col-md-4 col-sm-6">
+            <div class="product-inner">
+                <div class="product-image-wrapper">
+                    <span title="Wordpress E-commerce Portfolio Image" class="product-image" style="background-image: url('assets/img/port/atelier-multipurpose-ecommerce-theme1.jpg');"></span>
+
+							<span class="product-price-container">
+								<span class="product-price-wrapper">
+									<!-- <span class="product-price">$100.00+</span> -->
+								</span>
+							</span>
+
+                    <div class="product-controls">
+                        <div class="product-controls-wrapper">
+                            <a class="btn btn-sm btn-outline-color product-link md-trigger" data-modal="modal-1">Start Your Project</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="product col-md-4 col-sm-6">
+            <div class="product-inner">
+                <div class="product-image-wrapper">
+                    <span title="Wordpress E-commerce Portfolio Image" class="product-image" style="background-image: url('assets/img/port/bronx-ecommerce-wordpress-theme.jpg');"></span>
+
+							<span class="product-price-container">
+								<span class="product-price-wrapper">
+									<!-- <span class="product-price">$100.00+</span> -->
+								</span>
+							</span>
+
+                    <div class="product-controls">
+                        <div class="product-controls-wrapper">
+                            <a class="btn btn-sm btn-outline-color product-link md-trigger" data-modal="modal-1">Start Your Project</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        <div class="product col-md-4 col-sm-6">
+            <div class="product-inner">
+                <div class="product-image-wrapper">
+                    <span title="Wordpress E-commerce Portfolio Image" class="product-image" style="background-image: url('assets/img/port/savoy-grid-style-woocommerce-website-template.jpg');"></span>
+
+							<span class="product-price-container">
+								<span class="product-price-wrapper">
+									<!-- <span class="product-price">$100.00+</span> -->
+								</span>
+							</span>
+
+                    <div class="product-controls">
+                        <div class="product-controls-wrapper">
+                            <a class="btn btn-sm btn-outline-color product-link md-trigger" data-modal="modal-1">Start Your Project</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+        <div class="product-list row material-view">
+
+            <div class="clearfix">
+        <div class="product col-md-4 col-sm-6">
+            <div class="product-inner">
+                <div class="product-image-wrapper">
+                    <span title="Wordpress E-commerce Portfolio Image" class="product-image" style="background-image: url('assets/img/port/hugo-retro-ecommerce-theme.jpg');"></span>
+
+							<span class="product-price-container">
+								<span class="product-price-wrapper">
+									<!-- <span class="product-price">$100.00+</span> -->
+								</span>
+							</span>
+
+                    <div class="product-controls">
+                        <div class="product-controls-wrapper">
+                            <li class="featured md-trigger list-unstyled" data-modal="modal-1"><a class="btn btn-sm btn-outline-color">Start Your Project</a></li>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        <div class="product col-md-4 col-sm-6">
+            <div class="product-inner">
+                <div class="product-image-wrapper">
+                    <span title="Wordpress E-commerce Portfolio Image" class="product-image" style="background-image: url('assets/img/port/shopkeeper-ecommerce-theme.jpg');"></span>
+
+							<span class="product-price-container">
+								<span class="product-price-wrapper">
+									<!-- <span class="product-price">$100.00+</span> -->
+								</span>
+							</span>
+
+                    <div class="product-controls">
+                        <div class="product-controls-wrapper">
+                            <a class="btn btn-sm btn-outline-color product-link md-trigger" data-modal="modal-1">Start Your Project</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        <div class="product col-md-4 col-sm-6">
+            <div class="product-inner">
+                <div class="product-image-wrapper">
+                    <span title="Wordpress E-commerce Portfolio Image" class="product-image" style="background-image: url('assets/img/port/north-multipurpose-woocommerce-theme.jpg');"></span>
+
+							<span class="product-price-container">
+								<span class="product-price-wrapper">
+									<!-- <span class="product-price">$100.00+</span> -->
+								</span>
+							</span>
+
+                    <div class="product-controls">
+                        <div class="product-controls-wrapper">
+                            <a class="btn btn-sm btn-outline-color product-link md-trigger" data-modal="modal-1">Start Your Project</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+	<section id="guarantee" class="long-block light-text guarantee-section">
+		<div class="container">
+			<div class="col-md-12 col-lg-9">
+				<i class="icon icon-seo-icons-24 pull-left"></i>
+				<article class="pull-left">
+					<h2>Start Your E-COMMERCE NOW!</h2>
+					<!-- <p class="thin">In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret.</p> -->
+				</article>
+			</div>
+
+			<div class="col-md-12 col-lg-3">
+				<a href="#" class="btn btn-outline" style="margin-top: 7px;">Get Started Now</a>
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer" class="footer light-text">
+		<div class="container">
+			<div class="footer-content row">
+				<div class="col-sm-4 col-xs-12">
+					<div class="logo-wrapper">
+						<img width="130" height="31" src="assets/img/logo.png" alt="Scaledesk Logo" />
+					</div>
+					<p>We at Scaledesk help you build your MVP, so that you can validate your idea with minimum effort. As we take care of all the technology & let you concentrate on your business.</p>
+
+				</div>
+				<div class="col-sm-5 social-wrap col-xs-12">
+					<strong class="heading">Social Networks</strong>
+					<ul class="list-inline socials">
+						<li><a target="_blank" href="https://www.facebook.com/scaledesk"><span class="icon icon-socialmedia-08"></span></a></li>
+						<li>
+                            <a target="_blank" href="https://www.linkedin.com/company/7794688?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A7794688%2Cidx%3A1-1-1%2CtarId%3A1466512214720%2Ctas%3Ascaledesk"><span class="icon icon-socialmedia-05"></span></a></li>
+						<li>
+                            <a target="_blank" href="https://plus.google.com/100501833109961625265"><span class="icon icon-socialmedia-16"></span></a></li>
+<!--						<li><a href="index-fast-register.html#"><span class="icon icon-socialmedia-07"></span></a></li>-->
+					</ul>
+
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<strong class="heading contactus-text">Contact Us</strong>
+					<ul class="list-unstyled">
+						<li><span class="icon icon-chat-messages-14"></span>
+
+                        <a target="_blank" href="mailto:palashjohari@gmail.com">contact@scaledesk.com</a></li>
+
+                        <li><span class="icon icon-seo-icons-34"></span>A-36, Sector 4, Noida</li>
+
+                        <li><span class="icon icon-seo-icons-17"></span><a href="tel:+919599993689">+91-120-4162705 / 09599993689</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">&copy; &nbsp; Scaledesk Web Studio Pvt. Ltd. 2016. All rights reserved.</div>
+	</footer>
+        
+        <div class="site-footer hidden-sm hidden-lg text-center">
+ <a href="tel:09599993689"><span>Call Now &nbsp;</span> <i class="fa fa-phone"></i> 09599993689</a>
+       </div>
+
+	<div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>
+<div class="md-overlay"></div><!-- the overlay element -->
+	<!--[if lt IE 9]>
+
+	<![endif]-->
+	<!--[if (gte IE 9) | (!IE)]><!-->
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<!--<![endif]-->
+
+
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.appear.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.plugin.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.countdown.js"></script>
+
+	<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+
+	<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="assets/js/toastr.min.js"></script>
+
+	<script type="text/javascript" src="assets/js/startuply.js"></script>
+	<script src="https://use.fontawesome.com/a2fda6af1a.js"></script>
+			<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="assets/js/classie.js"></script>
+		<script src="assets/js/modalEffects.js"></script>
+
+		<!-- for the blur effect -->
+		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+		<script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '/js/';
+		</script>
+        
+        <!--    Scroll disable on Input type number-->
+    
+    <script>
+        
+    $(function(){
+  $(':input[type=number]').on('mousewheel',function(e){ $(this).blur(); });
+});
+    </script>
+        
+        
+<!--
+		<script src="assets/js/cssParser.js"></script>
+		<script src="assets/js/css-filters-polyfill.js"></script>
+-->
+</body>
+</html>
