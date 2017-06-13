@@ -133,6 +133,36 @@ src="https://www.facebook.com/tr?id=625750437631971&ev=PageView&noscript=1"
 				</div>
 			</div>
 		</div>
+
+
+<div class="modal fade" id="modal-2" role="dialog">
+			<div class="modal-content">
+				<h3 class="text-center">Start Your Project</h3>
+				<div class="modal-body">
+
+
+					<form class="form lead-form form-light custom-form-pad" method="post" action="PHPMailer/MailFunction.php" >
+						<div class="form-group col-sm-12">
+							<input id="first_name1" type="text" name="first_name" class="form-control required" placeholder="Name">
+						</div>
+						<div class="form-group col-sm-12">
+							<input id="email1" type="email" name="email" class="form-control required email" placeholder="E-mail">
+						</div>
+						<div class="form-group col-sm-12">
+							<input id="phone1" type="text" name="phone" class="form-control" placeholder="Contact Number">
+						</div>
+
+						<div class="form-group col-sm-12">
+							<input type="submit" value="Send" class="btn btn-lg btn-solid btn-block">
+						</div>
+                        
+                        <input type="hidden" value="ecommerce modal form" name="pagefrom">
+                               
+					</form>
+				</div>
+			</div>
+		</div>
+
 	<header>
 		<nav class="navigation navigation-header">
 			<div class="container">
@@ -244,7 +274,8 @@ src="https://www.facebook.com/tr?id=625750437631971&ev=PageView&noscript=1"
 						</div>
 
 						<div class="form-group col-sm-12">
-							<input type="submit" value="Send" class="btn btn-lg btn-solid btn-block">
+						
+                            <button type="submit" value="Send" class="btn btn-lg btn-solid btn-block"><i id="form-loader" class="fa fa-spinner fa-spin hidden"></i> Send</button>
 						</div>
                         
                         <input type="hidden" value="ecommerce Main form" name="pagefrom">
@@ -435,7 +466,7 @@ src="https://www.facebook.com/tr?id=625750437631971&ev=PageView&noscript=1"
 								<li>Free CMS</li>
                                 <li>On page SEO</li>
 							</ul>
-							<li class="featured md-trigger list-unstyled" data-modal="modal-1"><a class="btn btn-sm btn-outline-color">Start Your Project</a></li>
+							<li class="featured list-unstyled" ><a class="btn btn-sm btn-outline-color" data-toggle="modal" data-target="#modal-2">Start Your Project</a></li>
 						</div>
 					</div>
 				</div>
@@ -455,7 +486,7 @@ src="https://www.facebook.com/tr?id=625750437631971&ev=PageView&noscript=1"
 								<li>Google Analytics enabled</li>
                                 <li>Cross Browser Compatible</li>
 							</ul>
-							<li class="featured md-trigger list-unstyled" data-modal="modal-1"><a class="btn btn-sm btn-outline-color">Start Your Project</a></li>
+							<li class="featured list-unstyled"><a class="btn btn-sm btn-outline-color" data-toggle="modal" data-target="#modal-2">Start Your Project</a></li>
 						</div>
 					</div>
 				</div>
@@ -687,6 +718,8 @@ src="https://www.facebook.com/tr?id=625750437631971&ev=PageView&noscript=1"
 
 	<div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>
 <div class="md-overlay"></div><!-- the overlay element -->
+
+		
 	<!--[if lt IE 9]>
 
 	<![endif]-->
@@ -738,5 +771,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<script src="assets/js/cssParser.js"></script>
 		<script src="assets/js/css-filters-polyfill.js"></script>
 -->
+
+
 </body>
 </html>

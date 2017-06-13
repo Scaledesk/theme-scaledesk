@@ -651,6 +651,16 @@ hr.no-margin {
 	opacity: 1;
 }
 
+#modal-2 .modal-content{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*
+#modal-2 div{
+    background: rgba(0,0,0,0.5);
+}
+*/
 .section {
 	position: relative;
 	min-height: 50px;
